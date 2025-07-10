@@ -1,0 +1,288 @@
+---
+title: "Antoine Bodein, *Ph.D.*"
+subtitle: "Resume"
+date-format: "DD-MM-YYYY"
+format:
+  html:
+    theme: default
+    tabsets: true
+    toc: true             # ← on garde toc pour qu'il soit généré...
+    toc-depth: 3
+    toc-title: "Contents"
+    toc-expand: 1
+    self-contained: true
+    linkcolor: "#184082"
+    fontawesome: true
+    embed-resources: true
+    toc-location: right
+    page-layout: full
+---
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.cvdate {
+  float: right;
+  font-style: italic
+}
+
+#contact-info {
+  position: absolute; /* Permet un positionnement précis par rapport au corps du document */
+  top: 20px;          /* Distance depuis le haut */
+  left: 20px;         /* Distance depuis la gauche */
+  width: 300px;       /* Largeur de la boîte des contacts, ajustez si nécessaire */
+  font-size: 0.9em;   /* Taille de police légèrement plus petite */
+  line-height: 1.4;
+}
+
+</style>
+
+
+<span><img src="https://simpleicons.org/icons/maildotru.svg" alt="Email icon" style="height: 1.2em; vertical-align: middle;"></span> bodein.antoine@gmail.com
+| <span><img src="https://simpleicons.org/icons/github.svg" alt="GitHub icon" style="height: 1.2em; vertical-align: middle;"></span> [github.com/abodein](https://github.com/abodein)
+| <span><img src="https://simpleicons.org/icons/orcid.svg" alt="ORCID icon" style="height: 1.2em; vertical-align: middle;"></span> [0000-0002-9843-504X](https://orcid.org/0000-0002-9843-504X)
+
+
+---
+
+## A word about me
+
+Highly motivated Ph.D. in Molecular Medicine with 3+ years of experience at the interface of computational biology and bioinformatics. 
+
+My expertise encompasses  multi-omics data integration ,  statistical modeling , and  machine learning , with in-depth knowledge of  R  and  Python . 
+
+I have a proven track record in developing advanced data analysis methods and fostering research projects, and I am driven by innovation and collaborative research to address complex biological questions.
+
+---
+
+## 💼 Experience
+
+### Current Position
+
+**Associate Researcher in [Pr. Droit Laboratory](https://compbio.ca)**  <br> *Université Laval, Québec, Canada* [*2021 --- Present*]{.cvdate}
+
+- Led the development and implementation of advanced  bioinformatics  and  biostatistics approaches  for  multi-omics data  (transcriptomics, proteomics, metabolomics, metagenomics)  integration  and analysis, driving diverse research objectives.
+- Performed  statistical data analysis  to generate new research insights and hypotheses for collaborators.
+- Contributed to scientific advancement through literature reviews, integration of technological and methodological advances, and authorship of publications and detailed reports.
+-Provided training and supervision to students, fostering a collaborative research environment.
+- Presented research findings at scientific conferences (oral and poster presentations).
+
+### Teaching
+
+**Lecturer**  <br> *Université Laval, Québec, Canada* [*2017 --- Present*]{.cvdate}
+
+- Courses Taught:
+
+  - Computational Genomics [BIF-4004](https://www.ulaval.ca/etudes/cours/bif-4004-genomique-computationnelle)/[BIF-7004](https://www.ulaval.ca/etudes/cours/bif-7004-genomique-computationnelle) (45h)
+  - Introduction to Bioinformatics [BIF-7900](https://www.ulaval.ca/etudes/cours/bif-7900-bio-informatique-i) (45h)
+    
+- Key Teaching Areas: 
+
+  - Instructed students on core bioinformatics and computational biology topics:  Linux ,  R / Python  scripting,  Bash , and  Git .
+  - Taught NGS data analysis ( RNA-Seq , genome assembly),  multi-omics integration , and  metagenomics .
+  - Covered  statistical modeling ,  high-dimensional statistics ,  data visualization ,  biological networks ,  SQL databases , and  high-performance computing .
+  - Developed teaching materials, including video capsules, to enhance learning resources.
+
+ **Lecturer**  <br> *Université Paris Cité (Master BI & IPFB), Paris, France* [*2020 --- Present*]{.cvdate}
+
+-  Courses Taught: 
+    -  M1 (Master 1) :  NGS ,  metagenomics , and genome assembly (15h).
+    -  M2 (Master 2) :  Multi-omics integration  (15h).
+-  Key Teaching Areas: 
+    - Instructed students on advanced bioinformatics methods, including  high-throughput sequencing ,  genomic/microbial analysis , and  multi-omics data integration .
+
+### Early Career
+
+**Research Engineer**  <br> *GenoScreen, Lille, France* [*2016*]{.cvdate}
+ 
+ -  Developed tools to enhance and optimize bioinformatics analysis pipelines for  Next Generation Sequencing (NGS)  data.
+
+**Master's Intern**  <br> *GenoScreen, Lille, France* [*6 months, 2016*]{.cvdate}
+
+- Implemented a data analysis pipeline based on  Whole Metagenome Shotgun Sequencing  to study  microbial communities .
+
+**Bachelor's Intern**  <br> *Axeco, Cassel, France* [*2 months, 2013*]{.cvdate}
+
+- Performed cartography using MapInfo for environmental studies.
+
+
+**Bachelor's Intern**  <br> *Biotop Laboratoire, Hazebrouck, France* [*1 months, 2012*]{.cvdate}
+
+- Executed medical analysis tests including antibody/antigen and bacteriological assays.
+
+
+---
+
+## 🎓 Education
+
+**Ph.D. in Molecular Medicine**  <br> *Université Laval, Québec, Canada* [*2017 - 2021*]{.cvdate}
+
+- Thesis Title:  [*Innovative methods for longitudinal multi-omics data integration*](https://github.com/abodein/Thesis_manuscript)
+- Focused on longitudinal  multi-omics data integration  using multivariate projection-based and network-based methods, with applications on  microbiome dysbiosis  and human skin reconstruction
+
+**Master's Degree in Bioinformatics and Biostatistics **  <br> *Université Paris-Saclay, Orsay, France* [*2014 - 2016*]{.cvdate}
+
+- M2: Biologie Computationnelle : Analyse, Modélisation et Ingénierie de l'Information Biologique et Médicale (AMI2B)
+- M1: BioInformatique et Biostatistiques (BiBs)
+
+**Bachelor’s Degree in Biology with a specialisation in Biotechnology**  <br> *Faculté Libre des Sciences et Technologies, Lille, France* [*2011 - 2014*]{.cvdate}
+
+---
+
+## 📚 Publications and Scientific Contributions
+
+### Publications
+
+#### 2025
+
+- *Improving drug repositioning with negative data labeling using large language models*  
+  M. Picard, M. Leclercq, [**A. Bodein**]{.underline}, M.P. Scott-Boyer, O. Perin, A. Droit <br>
+  Journal of Cheminformatics, [https://doi.org/10.1186/s13321-025-00962-0](https://doi.org/10.1186/s13321-025-00962-0)
+
+#### 2024
+- *Target repositioning using multi-layer networks and machine learning: the case of prostate cancer*  
+  M. Picard, M.P. Scott-Boyer, [**A. Bodein**]{.underline}, M. Leclercq, J. Prunier, O. Perin, A. Droit  <br> 
+  Computational and Structural Biotechnology Journal, [https://doi.org/10.1016/j.csbj.2024.06.012](https://doi.org/10.1016/j.csbj.2024.06.012) 
+
+- *Combined transcriptomics and proteomics unveil the impact of vitamin C in modulating specific protein abundance in the mouse liver*  
+  Aumailley, L., Bodein A., Adjibade, P. et al.  <br>
+  BMC Biological Research, [https://doi.org/10.1186/s40659-024-00509-x](https://doi.org/10.1186/s40659-024-00509-x)
+
+- *Proteomic Profiling of Samples Derived from a Murine Model Following Cryptococcus neoformans Infection*  
+  Muselius B., [**A. Bodein**]{.underline}, Roux-Dalvai F., Droit A., Geddes-McAlister J.  <br>
+  Methods in Molecular Biology (Book chapter), [https://doi.org/10.1007/978-1-0716-3722-7_9](https://doi.org/10.1007/978-1-0716-3722-7_9)
+
+- *SOS genes are rapidly induced while translesion synthesis polymerase activity is temporally regulated*  
+  O. E. T. Bergum, A. H. Singleton, L. M. Røst, [**A. Bodein**]{.underline}, M.-P. Scott-Boyer, M. B. Rye, A. Droit, P. Bruheim, M. Otterlei  <br>
+  Frontiers in Microbiology, [https://doi.org/10.3389/fmicb.2024.1373344](https://doi.org/10.3389/fmicb.2024.1373344)
+
+#### 2023
+
+- *Multi-Omics Data Integration Reveals Key Variables Contributing to Subgingival Microbiome Dysbiosis-Induced Inflammatory Response in a Hyperglycemic Microenvironment*  
+  S. Lafleur$^\star$, [**A. Bodein**]{.underline}$^\star$, J. M. M. Mutombo, A. Mathieu, C. Joly Beauparlant, X. Minne, F. Chandad, A. Droit, V. P. Houde <br>  
+  International Journal of Molecular Sciences, [https://doi.org/10.3390/ijms24108832](https://doi.org/10.3390/ijms24108832)
+
+- *High dairy products intake modifies the correlation between α-tocopherol levels and serum proteins related to lipid metabolism in subjects at risk of type 2 diabetes*  
+  A. Mahdavi, M. Leclercq, [**A. Bodein**]{.underline}, C. Gotti, K. Greffard, J.F. Bilodeau, A. Droit, M. Lebel, I. Rudkowska  <br>
+  Journal of Functional Foods, [https://doi.org/10.1016/j.jff.2022.105375](https://doi.org/10.1016/j.jff.2022.105375)
+
+- *Decoding Epidermis Reconstruction through Time-course Multi-omics Data Integration*  
+  E. Bou Samra, C. Tacheau, M.P. Scott-Boyer, [**A. Bodein**]{.underline}, A. Foucher, K. Abed, V. Segaud, F. Thillou, N. Boyera, N. Misra, A. Droit, O. Perin, N. Cavusoglu  <br>
+  IFSCC Magazine, Volume 25(5), Winner of the Basic Research Award
+
+#### 2022
+
+- *Overview of methods for characterization and visualization of a protein-protein interaction network in a multi-omics integration context*  
+  V. Robin, [**A. Bodein**]{.underline}, M.P. Scott-Boyer, M. Leclercq, O. Perin, A. Droit  <br>
+  Frontiers in Molecular Biosciences, [https://doi.org/10.3389/fmolb.2022.962799](https://doi.org/10.3389/fmolb.2022.962799)
+
+- *The interaction of secreted phospholipase A2-IIA with the microbiota alters its lipidome and promotes inflammation*  
+  E. Doré, C. Joly-Beauparlant, S. Morozumi, A. Mathieu, T. Lévesque, I. Allaeys, AC. Duchez, N. Cloutier, M. Leclercq, [**A. Bodein**]{.underline}, C. Payré, C. Martin, A. Petit-Paitel, M. H. Gelb, M. Rangachari, M. Murakami, L. Davidovic, N. Flamand, M. Arita, G. Lambeau, A. Droit, E. Boilard  <br>
+  JCI Insight, [https://doi.org/10.1172/jci.insight.152638](https://doi.org/10.1172/jci.insight.152638)
+
+- *Interpretation of network-based integration from multi-omics longitudinal data*  
+  [**A. Bodein**]{.underline}, M.P. Scott-Boyer, O. Perin, K-A. Lê Cao, A. Droit  <br>
+  Nucleic Acids Research, [https://doi.org/10.1093/nar/gkab1200](https://doi.org/10.1093/nar/gkab1200)
+
+- *timeOmics: an R package for longitudinal multi-omics data integration*  
+  [**A. Bodein**]{.underline}, M.P. Scott-Boyer, O. Perin, K-A. Lê Cao, A. Droit  <br>
+  Bioinformatics, [https://doi.org/10.1093/bioinformatics/btab664](https://doi.org/10.1093/bioinformatics/btab664)
+
+#### 2021
+
+- *Integration strategies of multi-omics data for machine learning analysis*  
+  M. Picard, M.P. Scott-Boyer, [**A. Bodein**]{.underline}, O. Perin, A. Droit  <br>
+  Computational and Structural Biotechnology Journal, [https://doi.org/10.1016/j.csbj.2021.06.030](https://doi.org/10.1016/j.csbj.2021.06.030) 
+
+#### 2020
+
+- *Adipose tissue transcriptome is related to pollutant exposure in polar bear mother-cub pairs from Svalbard, Norway*  
+  P. Herst, J. Aars, C. Joly-Beauparlant, [**A. Bodein**]{.underline}, M. Dalvai, D. Gagne, A. Droit, J. Bailey, H. Routti  <br>
+  Environmental Science & Technology, [https://doi.org/10.1021/acs.est.0c01920](https://doi.org/10.1021/acs.est.0c01920)
+
+#### 2019
+
+- *A generic multivariate framework for the integration of microbiome longitudinal studies with other data types*  
+  [**A. Bodein**]{.underline}, O. Chapleur, A. Droit, K-A. Lê Cao  <br>
+  Frontiers in Genetics, [https://doi.org/10.3389/fgene.2019.00963](https://doi.org/10.3389/fgene.2019.00963) 
+
+### R Packages
+
+- netOmics   [*2021*]{.cvdate}  
+  [**A. Bodein**]{.underline} , M.P. Scott-Boyer, O. Perin, K-A. Lê Cao, A. Droit  
+  BioConductor (2021) [doi.org/10.18129/B9.bioc.netOmics](https://doi.org/10.18129/B9.bioc.netOmics)
+  
+- timeOmics   [*2019*]{.cvdate}  
+  [**A. Bodein**]{.underline} , O. Chapleur, A. Droit, K-A. Lê Cao
+  BioConductor (2019) [doi.org/10.18129/B9.bioc.timeOmics](https://doi.org/10.18129/B9.bioc.timeOmics)
+
+---
+
+### Talks
+
+- Integration of Microbiome and Multi-Omics Longitudinal Data <br> [**A. Bodein**]{.underline} , O. Chapleur, A. Droit, K-A. Lê Cao [*2019*]{.cvdate} 
+Presented to : 3\textsuperscript{rd} Workshop in Statistical Algorithms Challenges in Microbiome Data Analysis, New-York, USA
+
+---
+
+### Posters
+
+- *Prediction of Drug-Induced Liver Toxicity through Topological Motif Analysis in Protein Networks*  [*May 2025*]{.cvdate}
+  D. Benyakhlaf, [**A. Bodein**]{.underline}, A. Droit  
+  _Presented to : Journées de la Recherche du CHU de Québec, Québec, Canada_
+
+- *Amélioration du repositionnement de médicaments avec l’étiquetage de données négatives grâce aux grands modèles de langage*  [*Mar. 2025*]{.cvdate}  
+  M. Picard, M. Leclercq, [**A. Bodein**]{.underline}, M.P. Scott-Boyer, O. Perin, A. Droit  
+  _Presented to : Journée de l'Axe Endo-néphrologie, Québec, Canada_
+
+- *Tissue-specific network analysis to predict the hepatotoxicity of compounds*   [*Aug. 2023*]{.cvdate}  
+  M.P. Scott-Boyer, [**A. Bodein**]{.underline}, R. Grall, B. Ambroise, A. Riu, O. Perin, A. Droit  
+  _Presented to : 12^th^ World Congress on Alternatives and Animal Use in the Life Sciences, Niagara Falls, Canada_
+
+-  *A framework to integrate multi-omics longitudinal dataset*      [*Sept. 2019*]{.cvdate}  
+  M.P. Scott-Boyer, [**A. Bodein**]{.underline}, K-A. Lê Cao, O. Perin, A. Droit  
+  _Presented to : EMBO|EMBL - Multiomics to Mechanisms – Challenges in Data Integration, Heidelberg, Germany_
+
+- *Integration of Microbiome and Multi-Omics Longitudinal Data*  [*May 2019*]{.cvdate}  
+  [**A. Bodein**]{.underline}, O. Chapleur, A. Droit, K-A. Lê Cao  
+  _Presented to : Journées de la Recherche du CHU de Québec, Québec, Canada_
+
+- *WHORMSS® : Taxonomic and functional exploration from metagenome shotgun sequencing*  [*July 2017*]{.cvdate}  
+  Y. Laurent, J. Denonfoux, [**A. Bodein**]{.underline}, S. Ferreira  
+  _Presented to : Journées Ouvertes en Biologie, Informatique et Mathématiques (JOBIM), Lille, France_
+
+---
+
+## 🥇 Awards
+
+- Outreach and training grant for the Endocrinology and Nephrology Axis of the CHU de Québec
+  Outreach grant (500\$), Québec, Canada [*Nov. 2022*]{.cvdate}
+
+- Integration of Microbiome and Multi-Omics Longitudinal Data  
+  Best poster presentation, Québec, Canada [*May 2019*]{.cvdate}
+
+- Integration of Microbiome and Multi-Omics Longitudinal Data \
+  Travel grant, New-York, USA  [*May 2019*]{.cvdate}
+---
+
+## 🛠 Competences
+
+### Languages 
+
+*  French:  Native speaker
+*  English:  Read, spoken and written
+
+### Technical Skills
+
+*  **Programming & Scripting:**   R ,  Python , Bash, Javascript
+*  **Data Analysis & Modeling:** 
+     Multi-Omics Data Integration  (Multivariate projection, Networks),
+     Metagenomics data analysis  (16S, Shotgun),
+     Transcriptomics data analysis  (RNA-Seq, DESeq2, microarray)
+*  **Statistical & Machine Learning:**   Statistical modeling ,  High-dimensional statistics , Machine Learning approaches
+*  **Databases & Tools:**   SQL , R package development (TimeOmics, netOmics), MS Office, \LaTeX, Quarto
+
+## ⚽️ Other interests
+
+*  Running: Seasoned marathoner (Best time: [2h57'](https://sportstats.one/fr/profile/235419))
+*  Other sports:  cycling, swimming, hiking
+*  Music:  Trumpet player for over 15 years.
