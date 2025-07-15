@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Antoine Bodein, Ph.D."
+  navbar:
+    pinned: true
+    right:
+      - text: "Home"
+        file: index.qmd
+      - text: "CV"
+        file: cv.qmd
+      - text: "Publications"
+        file: publications.qmd
+      - icon: envelope
+        href: "mailto:bodein.antoine@gmail.com"
+  page-footer:
+    background: light # or `dark`
+    left: Copyright 2025, Antoine Bodein
+    right: This website is built with {{< fa heart title="a heart" >}}
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-location: right
+    toc-depth: 3
+    toc-expand: 1
+    toc-title: "On this page"
+
+editor: visual
+

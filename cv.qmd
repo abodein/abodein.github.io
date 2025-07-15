@@ -1,0 +1,101 @@
+
+## 💼 Experience
+
+### Current Position
+
+**Associate Researcher in [Pr. Droit Laboratory](https://compbio.ca)**  <br> *Université Laval, Québec, Canada* [*2021 --- Present*]{.cvdate}
+
+- Led the development and implementation of advanced  bioinformatics  and  biostatistics approaches  for  multi-omics data  (transcriptomics, proteomics, metabolomics, metagenomics)  integration  and analysis, driving diverse research objectives.
+- Performed  statistical data analysis  to generate new research insights and hypotheses for collaborators.
+- Contributed to scientific advancement through literature reviews, integration of technological and methodological advances, and authorship of publications and detailed reports.
+-Provided training and supervision to students, fostering a collaborative research environment.
+- Presented research findings at scientific conferences (oral and poster presentations).
+
+### Teaching
+
+**Lecturer**  <br> *Université Laval, Québec, Canada* [*2017 --- Present*]{.cvdate}
+
+- Courses Taught:
+
+  - Computational Genomics [BIF-4004](https://www.ulaval.ca/etudes/cours/bif-4004-genomique-computationnelle)/[BIF-7004](https://www.ulaval.ca/etudes/cours/bif-7004-genomique-computationnelle) (45h)
+  - Introduction to Bioinformatics [BIF-7900](https://www.ulaval.ca/etudes/cours/bif-7900-bio-informatique-i) (45h)
+    
+- Key Teaching Areas: 
+
+  - Instructed students on core bioinformatics and computational biology topics:  Linux ,  R / Python  scripting,  Bash , and  Git .
+  - Taught NGS data analysis ( RNA-Seq , genome assembly),  multi-omics integration , and  metagenomics .
+  - Covered  statistical modeling ,  high-dimensional statistics ,  data visualization ,  biological networks ,  SQL databases , and  high-performance computing .
+  - Developed teaching materials, including video capsules, to enhance learning resources.
+
+ **Lecturer**  <br> *Université Paris Cité (Master BI & IPFB), Paris, France* [*2020 --- Present*]{.cvdate}
+
+-  Courses Taught: 
+    -  M1 (Master 1) :  NGS ,  metagenomics , and genome assembly (15h).
+    -  M2 (Master 2) :  Multi-omics integration  (15h).
+-  Key Teaching Areas: 
+    - Instructed students on advanced bioinformatics methods, including  high-throughput sequencing ,  genomic/microbial analysis , and  multi-omics data integration .
+
+### Early Career
+
+**Research Engineer**  <br> *GenoScreen, Lille, France* [*2016*]{.cvdate}
+ 
+ -  Developed tools to enhance and optimize bioinformatics analysis pipelines for  Next Generation Sequencing (NGS)  data.
+
+**Master's Intern**  <br> *GenoScreen, Lille, France* [*6 months, 2016*]{.cvdate}
+
+- Implemented a data analysis pipeline based on  Whole Metagenome Shotgun Sequencing  to study  microbial communities .
+
+**Bachelor's Intern**  <br> *Axeco, Cassel, France* [*2 months, 2013*]{.cvdate}
+
+- Performed cartography using MapInfo for environmental studies.
+
+
+**Bachelor's Intern**  <br> *Biotop Laboratoire, Hazebrouck, France* [*1 months, 2012*]{.cvdate}
+
+- Executed medical analysis tests including antibody/antigen and bacteriological assays.
+
+
+---
+
+## 🎓 Education
+
+**Ph.D. in Molecular Medicine**  <br> *Université Laval, Québec, Canada* [*2017 - 2021*]{.cvdate}
+
+- Thesis Title:  [*Innovative methods for longitudinal multi-omics data integration*](https://github.com/abodein/Thesis_manuscript)
+- Focused on longitudinal  multi-omics data integration  using multivariate projection-based and network-based methods, with applications on  microbiome dysbiosis  and human skin reconstruction
+
+**Master's Degree in Bioinformatics and Biostatistics **  <br> *Université Paris-Saclay, Orsay, France* [*2014 - 2016*]{.cvdate}
+
+- M2: Biologie Computationnelle : Analyse, Modélisation et Ingénierie de l'Information Biologique et Médicale (AMI2B)
+- M1: BioInformatique et Biostatistiques (BiBs)
+
+**Bachelor’s Degree in Biology with a specialisation in Biotechnology**  <br> *Faculté Libre des Sciences et Technologies, Lille, France* [*2011 - 2014*]{.cvdate}
+
+---
+
+## 📚 Publications and Scientific Contributions
+
+[See my publications](publications.html)
+
+## 🛠 Competences
+
+### Languages 
+
+*  French 🇫🇷:  Native speaker
+*  English 🇬🇧:  Read, spoken and written
+
+### Technical Skills
+
+*  **Programming & Scripting:**   R ,  Python , Bash, Javascript
+*  **Data Analysis & Modeling:** 
+     Multi-Omics Data Integration  (Multivariate projection, Networks),
+     Metagenomics data analysis  (16S, Shotgun),
+     Transcriptomics data analysis  (RNA-Seq, DESeq2, microarray)
+*  **Statistical & Machine Learning:**   Statistical modeling ,  High-dimensional statistics , Machine Learning approaches
+*  **Databases & Tools:**   SQL , R package development (TimeOmics, netOmics), MS Office, \LaTeX, Quarto
+
+## ⚽️ Other interests
+
+*  Running 👟: Seasoned marathoner (Best time: [2h57'](https://sportstats.one/fr/profile/235419))
+*  Other sports:  cycling, swimming, hiking
+*  Music:  Trumpet player for over 15 years.
