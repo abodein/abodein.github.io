@@ -17,8 +17,8 @@ website:
         href: "mailto:bodein.antoine@gmail.com"
   page-footer:
     background: light # or `dark`
-    left: Copyright 2025, Antoine Bodein
-    right: This website is built with {{< fa heart title="a heart" >}}
+    left: Copiright 2025, Antoine Bodein
+    right: This website is built with [{{< fa brands github title="GitHub octocat logo" >}}](https://github.com/samanthacsik/samanthacsik.github.io){target=_blank}, [{{< fa brands r-project title="R Project" >}}](https://www.r-project.org/about.html){target=_blank} and [Quarto](https://quarto.org/){target=_blank}
 format:
   html:
     theme: cosmo
