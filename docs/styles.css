@@ -1,0 +1,9 @@
+/* css styles */
+
+.sidebar .logo img {
+  border-radius: 50%;
+  width: 120px;       /* adapte à la taille souhaitée */
+  height: 120px;
+  object-fit: cover;
+  margin: 0 auto;
+}
