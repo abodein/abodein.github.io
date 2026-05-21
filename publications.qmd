@@ -1,7 +1,7 @@
 ---
 title: "Publications"
-format: 
-  html: 
+format:
+  html:
     self-contained: true
     toc: true
     toc-location: right
@@ -9,6 +9,7 @@ format:
     toc-depth: 3
 ---
 
+```{=html}
 <style>
   .metric-box {
     font-size: 1.3em;
@@ -22,13 +23,11 @@ format:
   align-items: center;
   }
 </style>
-          
+```
 
-
-
-<div class="grid-2-cols">
-
+:::::: grid-2-cols
 <!-- METRICS LEFT COLUMN -->
+
 <div>
 
 ```{r import_scholar, echo=FALSE}
@@ -38,16 +37,17 @@ x <- get_profile(id)
 citations <- get_citation_history(id)
 ```
 
-::: {.metric-box}
-<span style="font-size:1.5em;"> [![](https://img.shields.io/badge/Google%20Scholar-Profile-blue?logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=p-N6-8YAAAAJ)</span>  
-<span style="font-size:1.5em;">📚</span> **Total Citations:** `r x$total_cites`   
-<span style="font-size:1.5em;">🧠</span> **h-index:** `r x$h_index`  
-<span style="font-size:1.5em;">🏆</span> **i10-index:** `r x$i10_index`  
+::: metric-box
+[[![](https://img.shields.io/badge/Google%20Scholar-Profile-blue?logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=p-N6-8YAAAAJ)]{style="font-size:1.5em;"}\
+[📚]{style="font-size:1.5em;"} **Total Citations:** `r x$total_cites`\
+[🧠]{style="font-size:1.5em;"} **h-index:** `r x$h_index`\
+[🏆]{style="font-size:1.5em;"} **i10-index:** `r x$i10_index`
 :::
 
 </div>
 
 <div>
+
 ```{r plot_citations, echo=FALSE, message=FALSE, warning=FALSE}
 library(ggplot2)
 library(plotly)
@@ -78,125 +78,114 @@ plot_ly(
     margin = list(b = 80)  # pour éviter le chevauchement
   )
 ```
+
 </div>
-</div>
+::::::
+
 ### Scientific papers
 
 #### 2025
 
-- *Improving drug repositioning with negative data labeling using large language models*  
-  M. Picard, M. Leclercq, [**A. Bodein**]{.underline}, M.P. Scott-Boyer, O. Perin, A. Droit <br>
-  Journal of Cheminformatics, [https://doi.org/10.1186/s13321-025-00962-0](https://doi.org/10.1186/s13321-025-00962-0)
+-   *A systematic benchmark of integrative strategies for microbiome-metabolome data*\
+    L. Mangnier$^\star$, [**A. Bodein**]{.underline}$^\star$, M. Mariaz, A. Mathieu, M.P. Scott-Boyer, N. Vashist, M.S. Bramble, A. Droit <br>\
+    Communications Biology, <https://doi.org/10.1038/s42003-025-08515-9>
+
+-   *Improving drug repositioning with negative data labeling using large language models*\
+    M. Picard, M. Leclercq, [**A. Bodein**]{.underline}, M.P. Scott-Boyer, O. Perin, A. Droit <br> Journal of Cheminformatics, <https://doi.org/10.1186/s13321-025-00962-0>
 
 #### 2024
-- *Target repositioning using multi-layer networks and machine learning: the case of prostate cancer*  
-  M. Picard, M.P. Scott-Boyer, [**A. Bodein**]{.underline}, M. Leclercq, J. Prunier, O. Perin, A. Droit  <br> 
-  Computational and Structural Biotechnology Journal, [https://doi.org/10.1016/j.csbj.2024.06.012](https://doi.org/10.1016/j.csbj.2024.06.012) 
 
-- *Combined transcriptomics and proteomics unveil the impact of vitamin C in modulating specific protein abundance in the mouse liver*  
-  Aumailley, L., Bodein A., Adjibade, P. et al.  <br>
-  BMC Biological Research, [https://doi.org/10.1186/s40659-024-00509-x](https://doi.org/10.1186/s40659-024-00509-x)
+-   *Target repositioning using multi-layer networks and machine learning: the case of prostate cancer*\
+    M. Picard, M.P. Scott-Boyer, [**A. Bodein**]{.underline}, M. Leclercq, J. Prunier, O. Perin, A. Droit <br> Computational and Structural Biotechnology Journal, <https://doi.org/10.1016/j.csbj.2024.06.012>
 
-- *Proteomic Profiling of Samples Derived from a Murine Model Following Cryptococcus neoformans Infection*  
-  Muselius B., [**A. Bodein**]{.underline}, Roux-Dalvai F., Droit A., Geddes-McAlister J.  <br>
-  Methods in Molecular Biology (Book chapter), [https://doi.org/10.1007/978-1-0716-3722-7_9](https://doi.org/10.1007/978-1-0716-3722-7_9)
+-   *Combined transcriptomics and proteomics unveil the impact of vitamin C in modulating specific protein abundance in the mouse liver*\
+    Aumailley, L., Bodein A., Adjibade, P. et al. <br> BMC Biological Research, <https://doi.org/10.1186/s40659-024-00509-x>
 
-- *SOS genes are rapidly induced while translesion synthesis polymerase activity is temporally regulated*  
-  O. E. T. Bergum, A. H. Singleton, L. M. Røst, [**A. Bodein**]{.underline}, M.-P. Scott-Boyer, M. B. Rye, A. Droit, P. Bruheim, M. Otterlei  <br>
-  Frontiers in Microbiology, [https://doi.org/10.3389/fmicb.2024.1373344](https://doi.org/10.3389/fmicb.2024.1373344)
+-   *Proteomic Profiling of Samples Derived from a Murine Model Following Cryptococcus neoformans Infection*\
+    Muselius B., [**A. Bodein**]{.underline}, Roux-Dalvai F., Droit A., Geddes-McAlister J. <br> Methods in Molecular Biology (Book chapter), <https://doi.org/10.1007/978-1-0716-3722-7_9>
+
+-   *SOS genes are rapidly induced while translesion synthesis polymerase activity is temporally regulated*\
+    O. E. T. Bergum, A. H. Singleton, L. M. Røst, [**A. Bodein**]{.underline}, M.-P. Scott-Boyer, M. B. Rye, A. Droit, P. Bruheim, M. Otterlei <br> Frontiers in Microbiology, <https://doi.org/10.3389/fmicb.2024.1373344>
 
 #### 2023
 
-- *Multi-Omics Data Integration Reveals Key Variables Contributing to Subgingival Microbiome Dysbiosis-Induced Inflammatory Response in a Hyperglycemic Microenvironment*  
-  S. Lafleur$^\star$, [**A. Bodein**]{.underline}$^\star$, J. M. M. Mutombo, A. Mathieu, C. Joly Beauparlant, X. Minne, F. Chandad, A. Droit, V. P. Houde <br>  
-  International Journal of Molecular Sciences, [https://doi.org/10.3390/ijms24108832](https://doi.org/10.3390/ijms24108832)
+-   *Multi-Omics Data Integration Reveals Key Variables Contributing to Subgingival Microbiome Dysbiosis-Induced Inflammatory Response in a Hyperglycemic Microenvironment*\
+    S. Lafleur$^\star$, [**A. Bodein**]{.underline}$^\star$, J. M. M. Mutombo, A. Mathieu, C. Joly Beauparlant, X. Minne, F. Chandad, A. Droit, V. P. Houde <br>\
+    International Journal of Molecular Sciences, <https://doi.org/10.3390/ijms24108832>
 
-- *High dairy products intake modifies the correlation between α-tocopherol levels and serum proteins related to lipid metabolism in subjects at risk of type 2 diabetes*  
-  A. Mahdavi, M. Leclercq, [**A. Bodein**]{.underline}, C. Gotti, K. Greffard, J.F. Bilodeau, A. Droit, M. Lebel, I. Rudkowska  <br>
-  Journal of Functional Foods, [https://doi.org/10.1016/j.jff.2022.105375](https://doi.org/10.1016/j.jff.2022.105375)
+-   *High dairy products intake modifies the correlation between α-tocopherol levels and serum proteins related to lipid metabolism in subjects at risk of type 2 diabetes*\
+    A. Mahdavi, M. Leclercq, [**A. Bodein**]{.underline}, C. Gotti, K. Greffard, J.F. Bilodeau, A. Droit, M. Lebel, I. Rudkowska <br> Journal of Functional Foods, <https://doi.org/10.1016/j.jff.2022.105375>
 
-- *Decoding Epidermis Reconstruction through Time-course Multi-omics Data Integration*  
-  E. Bou Samra, C. Tacheau, M.P. Scott-Boyer, [**A. Bodein**]{.underline}, A. Foucher, K. Abed, V. Segaud, F. Thillou, N. Boyera, N. Misra, A. Droit, O. Perin, N. Cavusoglu  <br>
-  IFSCC Magazine, Volume 25(5), Winner of the Basic Research Award
+-   *Decoding Epidermis Reconstruction through Time-course Multi-omics Data Integration*\
+    E. Bou Samra, C. Tacheau, M.P. Scott-Boyer, [**A. Bodein**]{.underline}, A. Foucher, K. Abed, V. Segaud, F. Thillou, N. Boyera, N. Misra, A. Droit, O. Perin, N. Cavusoglu <br> IFSCC Magazine, Volume 25(5), Winner of the Basic Research Award
 
 #### 2022
 
-- *Overview of methods for characterization and visualization of a protein-protein interaction network in a multi-omics integration context*  
-  V. Robin, [**A. Bodein**]{.underline}, M.P. Scott-Boyer, M. Leclercq, O. Perin, A. Droit  <br>
-  Frontiers in Molecular Biosciences, [https://doi.org/10.3389/fmolb.2022.962799](https://doi.org/10.3389/fmolb.2022.962799)
+-   *Overview of methods for characterization and visualization of a protein-protein interaction network in a multi-omics integration context*\
+    V. Robin, [**A. Bodein**]{.underline}, M.P. Scott-Boyer, M. Leclercq, O. Perin, A. Droit <br> Frontiers in Molecular Biosciences, <https://doi.org/10.3389/fmolb.2022.962799>
 
-- *The interaction of secreted phospholipase A2-IIA with the microbiota alters its lipidome and promotes inflammation*  
-  E. Doré, C. Joly-Beauparlant, S. Morozumi, A. Mathieu, T. Lévesque, I. Allaeys, AC. Duchez, N. Cloutier, M. Leclercq, [**A. Bodein**]{.underline}, C. Payré, C. Martin, A. Petit-Paitel, M. H. Gelb, M. Rangachari, M. Murakami, L. Davidovic, N. Flamand, M. Arita, G. Lambeau, A. Droit, E. Boilard  <br>
-  JCI Insight, [https://doi.org/10.1172/jci.insight.152638](https://doi.org/10.1172/jci.insight.152638)
+-   *The interaction of secreted phospholipase A2-IIA with the microbiota alters its lipidome and promotes inflammation*\
+    E. Doré, C. Joly-Beauparlant, S. Morozumi, A. Mathieu, T. Lévesque, I. Allaeys, AC. Duchez, N. Cloutier, M. Leclercq, [**A. Bodein**]{.underline}, C. Payré, C. Martin, A. Petit-Paitel, M. H. Gelb, M. Rangachari, M. Murakami, L. Davidovic, N. Flamand, M. Arita, G. Lambeau, A. Droit, E. Boilard <br> JCI Insight, <https://doi.org/10.1172/jci.insight.152638>
 
-- *Interpretation of network-based integration from multi-omics longitudinal data*  
-  [**A. Bodein**]{.underline}, M.P. Scott-Boyer, O. Perin, K-A. Lê Cao, A. Droit  <br>
-  Nucleic Acids Research, [https://doi.org/10.1093/nar/gkab1200](https://doi.org/10.1093/nar/gkab1200)
+-   *Interpretation of network-based integration from multi-omics longitudinal data*\
+    [**A. Bodein**]{.underline}, M.P. Scott-Boyer, O. Perin, K-A. Lê Cao, A. Droit <br> Nucleic Acids Research, <https://doi.org/10.1093/nar/gkab1200>
 
-- *timeOmics: an R package for longitudinal multi-omics data integration*  
-  [**A. Bodein**]{.underline}, M.P. Scott-Boyer, O. Perin, K-A. Lê Cao, A. Droit  <br>
-  Bioinformatics, [https://doi.org/10.1093/bioinformatics/btab664](https://doi.org/10.1093/bioinformatics/btab664)
+-   *timeOmics: an R package for longitudinal multi-omics data integration*\
+    [**A. Bodein**]{.underline}, M.P. Scott-Boyer, O. Perin, K-A. Lê Cao, A. Droit <br> Bioinformatics, <https://doi.org/10.1093/bioinformatics/btab664>
 
 #### 2021
 
-- *Integration strategies of multi-omics data for machine learning analysis*  
-  M. Picard, M.P. Scott-Boyer, [**A. Bodein**]{.underline}, O. Perin, A. Droit  <br>
-  Computational and Structural Biotechnology Journal, [https://doi.org/10.1016/j.csbj.2021.06.030](https://doi.org/10.1016/j.csbj.2021.06.030) 
+-   *Integration strategies of multi-omics data for machine learning analysis*\
+    M. Picard, M.P. Scott-Boyer, [**A. Bodein**]{.underline}, O. Perin, A. Droit <br> Computational and Structural Biotechnology Journal, <https://doi.org/10.1016/j.csbj.2021.06.030>
 
 #### 2020
 
-- *Adipose tissue transcriptome is related to pollutant exposure in polar bear mother-cub pairs from Svalbard, Norway*  
-  P. Herst, J. Aars, C. Joly-Beauparlant, [**A. Bodein**]{.underline}, M. Dalvai, D. Gagne, A. Droit, J. Bailey, H. Routti  <br>
-  Environmental Science & Technology, [https://doi.org/10.1021/acs.est.0c01920](https://doi.org/10.1021/acs.est.0c01920)
+-   *Adipose tissue transcriptome is related to pollutant exposure in polar bear mother-cub pairs from Svalbard, Norway*\
+    P. Herst, J. Aars, C. Joly-Beauparlant, [**A. Bodein**]{.underline}, M. Dalvai, D. Gagne, A. Droit, J. Bailey, H. Routti <br> Environmental Science & Technology, <https://doi.org/10.1021/acs.est.0c01920>
 
 #### 2019
 
-- *A generic multivariate framework for the integration of microbiome longitudinal studies with other data types*  
-  [**A. Bodein**]{.underline}, O. Chapleur, A. Droit, K-A. Lê Cao  <br>
-  Frontiers in Genetics, [https://doi.org/10.3389/fgene.2019.00963](https://doi.org/10.3389/fgene.2019.00963) 
+-   *A generic multivariate framework for the integration of microbiome longitudinal studies with other data types*\
+    [**A. Bodein**]{.underline}, O. Chapleur, A. Droit, K-A. Lê Cao <br> Frontiers in Genetics, <https://doi.org/10.3389/fgene.2019.00963>
 
 ### R Packages
 
-- netOmics   [*2021*]{.cvdate}  
-  [**A. Bodein**]{.underline} , M.P. Scott-Boyer, O. Perin, K-A. Lê Cao, A. Droit  
-  BioConductor (2021) [doi.org/10.18129/B9.bioc.netOmics](https://doi.org/10.18129/B9.bioc.netOmics)
-  
-- timeOmics   [*2019*]{.cvdate}  
-  [**A. Bodein**]{.underline} , O. Chapleur, A. Droit, K-A. Lê Cao
-  BioConductor (2019) [doi.org/10.18129/B9.bioc.timeOmics](https://doi.org/10.18129/B9.bioc.timeOmics)
-  
----
+-   netOmics [*2021*]{.cvdate}\
+    [**A. Bodein**]{.underline} , M.P. Scott-Boyer, O. Perin, K-A. Lê Cao, A. Droit\
+    BioConductor (2021) [doi.org/10.18129/B9.bioc.netOmics](https://doi.org/10.18129/B9.bioc.netOmics)
+
+-   timeOmics [*2019*]{.cvdate}\
+    [**A. Bodein**]{.underline} , O. Chapleur, A. Droit, K-A. Lê Cao BioConductor (2019) [doi.org/10.18129/B9.bioc.timeOmics](https://doi.org/10.18129/B9.bioc.timeOmics)
+
+------------------------------------------------------------------------
 
 ### Talks
 
-- Integration of Microbiome and Multi-Omics Longitudinal Data <br> [**A. Bodein**]{.underline} , O. Chapleur, A. Droit, K-A. Lê Cao [*2019*]{.cvdate} 
-Presented to : 3\textsuperscript{rd} Workshop in Statistical Algorithms Challenges in Microbiome Data Analysis, New-York, USA
+-   Integration of Microbiome and Multi-Omics Longitudinal Data <br> [**A. Bodein**]{.underline} , O. Chapleur, A. Droit, K-A. Lê Cao [*2019*]{.cvdate} Presented to : 3\textsuperscript{rd} Workshop in Statistical Algorithms Challenges in Microbiome Data Analysis, New-York, USA
 
----
+------------------------------------------------------------------------
 
 ### Posters
 
-- *Prediction of Drug-Induced Liver Toxicity through Topological Motif Analysis in Protein Networks*  [*May 2025*]{.cvdate}
-  D. Benyakhlaf, [**A. Bodein**]{.underline}, A. Droit  
-  _Presented to : Journées de la Recherche du CHU de Québec, Québec, Canada_
+-   *Prediction of Drug-Induced Liver Toxicity through Topological Motif Analysis in Protein Networks* [*May 2025*]{.cvdate} D. Benyakhlaf, [**A. Bodein**]{.underline}, A. Droit\
+    *Presented to : Journées de la Recherche du CHU de Québec, Québec, Canada*
 
-- *Amélioration du repositionnement de médicaments avec l’étiquetage de données négatives grâce aux grands modèles de langage*  [*Mar. 2025*]{.cvdate}  
-  M. Picard, M. Leclercq, [**A. Bodein**]{.underline}, M.P. Scott-Boyer, O. Perin, A. Droit  
-  _Presented to : Journée de l'Axe Endo-néphrologie, Québec, Canada_
+-   *Amélioration du repositionnement de médicaments avec l’étiquetage de données négatives grâce aux grands modèles de langage* [*Mar. 2025*]{.cvdate}\
+    M. Picard, M. Leclercq, [**A. Bodein**]{.underline}, M.P. Scott-Boyer, O. Perin, A. Droit\
+    *Presented to : Journée de l'Axe Endo-néphrologie, Québec, Canada*
 
-- *Tissue-specific network analysis to predict the hepatotoxicity of compounds*   [*Aug. 2023*]{.cvdate}  
-  M.P. Scott-Boyer, [**A. Bodein**]{.underline}, R. Grall, B. Ambroise, A. Riu, O. Perin, A. Droit  
-  _Presented to : 12^th^ World Congress on Alternatives and Animal Use in the Life Sciences, Niagara Falls, Canada_
+-   *Tissue-specific network analysis to predict the hepatotoxicity of compounds* [*Aug. 2023*]{.cvdate}\
+    M.P. Scott-Boyer, [**A. Bodein**]{.underline}, R. Grall, B. Ambroise, A. Riu, O. Perin, A. Droit\
+    *Presented to : 12^th^ World Congress on Alternatives and Animal Use in the Life Sciences, Niagara Falls, Canada*
 
--  *A framework to integrate multi-omics longitudinal dataset*      [*Sept. 2019*]{.cvdate}  
-  M.P. Scott-Boyer, [**A. Bodein**]{.underline}, K-A. Lê Cao, O. Perin, A. Droit  
-  _Presented to : EMBO|EMBL - Multiomics to Mechanisms – Challenges in Data Integration, Heidelberg, Germany_
+-   *A framework to integrate multi-omics longitudinal dataset* [*Sept. 2019*]{.cvdate}\
+    M.P. Scott-Boyer, [**A. Bodein**]{.underline}, K-A. Lê Cao, O. Perin, A. Droit\
+    *Presented to : EMBO\|EMBL - Multiomics to Mechanisms – Challenges in Data Integration, Heidelberg, Germany*
 
-- *Integration of Microbiome and Multi-Omics Longitudinal Data*  [*May 2019*]{.cvdate}  
-  [**A. Bodein**]{.underline}, O. Chapleur, A. Droit, K-A. Lê Cao  
-  _Presented to : Journées de la Recherche du CHU de Québec, Québec, Canada_
+-   *Integration of Microbiome and Multi-Omics Longitudinal Data* [*May 2019*]{.cvdate}\
+    [**A. Bodein**]{.underline}, O. Chapleur, A. Droit, K-A. Lê Cao\
+    *Presented to : Journées de la Recherche du CHU de Québec, Québec, Canada*
 
-- *WHORMSS® : Taxonomic and functional exploration from metagenome shotgun sequencing*  [*July 2017*]{.cvdate}  
-  Y. Laurent, J. Denonfoux, [**A. Bodein**]{.underline}, S. Ferreira  
-  _Presented to : Journées Ouvertes en Biologie, Informatique et Mathématiques (JOBIM), Lille, France_
-
+-   *WHORMSS® : Taxonomic and functional exploration from metagenome shotgun sequencing* [*July 2017*]{.cvdate}\
+    Y. Laurent, J. Denonfoux, [**A. Bodein**]{.underline}, S. Ferreira\
+    *Presented to : Journées Ouvertes en Biologie, Informatique et Mathématiques (JOBIM), Lille, France*
