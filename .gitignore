@@ -4,3 +4,8 @@
 .Ruserdata
 
 /.quarto/
+.DS_Store
+assets/
+image-placeholder.png
+_freeze/site_libs/
+_site/
