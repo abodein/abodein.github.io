@@ -6881,8 +6881,6 @@ margin: 0 auto;
   <ul>
   <li><a href="#scientific-papers" id="toc-scientific-papers" class="nav-link active" data-scroll-target="#scientific-papers">Scientific papers</a></li>
   <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages">R Packages</a></li>
-  <li><a href="#talks" id="toc-talks" class="nav-link" data-scroll-target="#talks">Talks</a></li>
-  <li><a href="#posters" id="toc-posters" class="nav-link" data-scroll-target="#posters">Posters</a></li>
   </ul>
 </nav>
     </div>
@@ -6909,42 +6907,149 @@ margin: 0 auto;
 
 
 <style>
-.metric-box {
-font-size: 1.3em;
-margin-bottom: 1em;
-}
-.grid-2-cols {
+
+.metrics-grid {
 display: grid;
-grid-template-columns: 1fr 2fr;
+grid-template-columns: 210px 1fr;
 gap: 2rem;
 align-items: center;
+margin-bottom: 2.5rem;
 }
+.scholar-badge { margin-bottom: 1rem; }
+.stat-cards { display: flex; flex-direction: column; gap: 0.6rem; }
+.stat-card {
+display: flex;
+align-items: center;
+gap: 0.85rem;
+background: #f8faff;
+border: 1px solid #dce8fb;
+border-left: 4px solid #1a73e8;
+border-radius: 10px;
+padding: 0.65rem 1rem;
+}
+.stat-icon { font-size: 1.35rem; flex-shrink: 0; }
+.stat-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: #6b7280; margin: 0; }
+.stat-value { font-size: 1.45rem; font-weight: 700; color: #1a73e8; margin: 0; line-height: 1.1; }
+
+.pub-section ul { list-style: none; padding-left: 0; }
+.pub-section li {
+background: #fff;
+border: 1px solid #e5e7eb;
+border-left: 4px solid #1a73e8;
+border-radius: 10px;
+padding: 0.9rem 1.2rem;
+margin: 0.55rem 0;
+box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.pub-section li:hover {
+box-shadow: 0 4px 16px rgba(26,115,232,0.15);
+transform: translateX(5px);
+}
+
+.pub-section h4 {
+background: #1a73e8;
+color: #fff !important;
+font-size: 0.85rem;
+font-weight: 600;
+padding: 0.22rem 0.9rem;
+border-radius: 999px;
+margin-top: 1.8rem;
+margin-bottom: 0.7rem;
+width: fit-content;
+}
+.pub-section h4 .anchor { display: none !important; }
+.pub-section h4 a { color: #fff !important; text-decoration: none; }
+
+.pkg-section ul { list-style: none; padding-left: 0; }
+.pkg-section li {
+background: #faf8ff;
+border: 1px solid #e0dbfb;
+border-left: 4px solid #6366f1;
+border-radius: 10px;
+padding: 0.9rem 1.2rem;
+margin: 0.55rem 0;
+box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.pkg-section li:hover {
+box-shadow: 0 4px 16px rgba(99,102,241,0.15);
+transform: translateX(5px);
+}
+
+.conf-section ul { list-style: none; padding-left: 0; }
+.conf-section li {
+background: #f9fffe;
+border: 1px solid #d0f0e8;
+border-left: 4px solid #10b981;
+border-radius: 10px;
+padding: 0.9rem 1.2rem;
+margin: 0.55rem 0;
+box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.conf-section li:hover {
+box-shadow: 0 4px 16px rgba(16,185,129,0.15);
+transform: translateX(5px);
+}
+hr { border: none; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
 </style>
-<div class="grid-2-cols">
-<!-- METRICS LEFT COLUMN -->
-<div>
 <div class="cell">
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: package &#39;scholar&#39; was built under R version 4.5.2</code></pre>
 </div>
 </div>
-<div class="metric-box">
-<p><span style="font-size:1.5em;"><a href="https://scholar.google.com/citations?user=p-N6-8YAAAAJ"><img role="img" src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTUiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iR29vZ2xlIFNjaG9sYXI6IFByb2ZpbGUiPjx0aXRsZT5Hb29nbGUgU2Nob2xhcjogUHJvZmlsZTwvdGl0bGU+PGZpbHRlciBpZD0iYmx1ciI+PGZlR2F1c3NpYW5CbHVyIGluPSJTb3VyY2VHcmFwaGljIiBzdGREZXZpYXRpb249IjE2Ii8+PC9maWx0ZXI+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iMTU1IiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iI2ZmZiIvPjwvY2xpcFBhdGg+PGcgY2xpcC1wYXRoPSJ1cmwoI3IpIj48cmVjdCB3aWR0aD0iMTEwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjNTU1Ii8+PHJlY3QgeD0iMTEwIiB3aWR0aD0iNDUiIGhlaWdodD0iMjAiIGZpbGw9IiMwMDdlYzYiLz48cmVjdCB3aWR0aD0iMTU1IiBoZWlnaHQ9IjIwIiBmaWxsPSJ1cmwoI3MpIi8+PC9nPjxnIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJWZXJkYW5hLEdlbmV2YSxEZWphVnUgU2FucyxzYW5zLXNlcmlmIiB0ZXh0LXJlbmRlcmluZz0iZ2VvbWV0cmljUHJlY2lzaW9uIiBmb250LXNpemU9IjExMCI+PGltYWdlIHg9IjUiIHk9IjMiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgaHJlZj0iZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCbWFXeHNQU0lqTkRJNE5VWTBJaUJ5YjJ4bFBTSnBiV2NpSUhacFpYZENiM2c5SWpBZ01DQXlOQ0F5TkNJZ2VHMXNibk05SW1oMGRIQTZMeTkzZDNjdWR6TXViM0puTHpJd01EQXZjM1puSWo0OGRHbDBiR1UrUjI5dloyeGxJRk5qYUc5c1lYSThMM1JwZEd4bFBqeHdZWFJvSUdROUlrMDFMakkwTWlBeE15NDNOamxNTUNBNUxqVWdNVElnTUd3eE1pQTVMalV0TlM0eU5ESWdOQzR5TmpsRE1UY3VOVFE0SURFeExqSTBPU0F4TkM0NU56Z2dPUzQxSURFeUlEa3VOV010TWk0NU56Y2dNQzAxTGpVME9DQXhMamMwT0MwMkxqYzFPQ0EwTGpJMk9YcE5NVElnTVRCaE55QTNJREFnTVNBd0lEQWdNVFFnTnlBM0lEQWdNQ0F3SURBdE1UUjZJaTgrUEM5emRtYysiLz48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iNjQ1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjgwIiBmaWx0ZXI9InVybCgjYmx1cikiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI4MzAiPkdvb2dsZSBTY2hvbGFyPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI2NDUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjgzMCI+R29vZ2xlIFNjaG9sYXI8L3RleHQ+PHRleHQgeD0iNjQ1IiB5PSIxNDAiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiBmaWxsPSIjZmZmIiB0ZXh0TGVuZ3RoPSI4MzAiPkdvb2dsZSBTY2hvbGFyPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSIxMzE1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjgwIiBmaWx0ZXI9InVybCgjYmx1cikiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSIzNTAiPlByb2ZpbGU8L3RleHQ+PHRleHQgYXJpYS1oaWRkZW49InRydWUiIHg9IjEzMTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjM1MCI+UHJvZmlsZTwvdGV4dD48dGV4dCB4PSIxMzE1IiB5PSIxNDAiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiBmaWxsPSIjZmZmIiB0ZXh0TGVuZ3RoPSIzNTAiPlByb2ZpbGU8L3RleHQ+PC9nPjwvc3ZnPg==" class="img-fluid"></a></span><br>
-<span style="font-size:1.5em;">📚</span> <strong>Total Citations:</strong> 1090<br>
-<span style="font-size:1.5em;">🧠</span> <strong>h-index:</strong> 9<br>
-<span style="font-size:1.5em;">🏆</span> <strong>i10-index:</strong> 9</p>
+<div class="metrics-grid">
+<div>
+<div class="scholar-badge">
+<p><a href="https://scholar.google.com/citations?user=p-N6-8YAAAAJ"><img role="img" src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTUiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iR29vZ2xlIFNjaG9sYXI6IFByb2ZpbGUiPjx0aXRsZT5Hb29nbGUgU2Nob2xhcjogUHJvZmlsZTwvdGl0bGU+PGZpbHRlciBpZD0iYmx1ciI+PGZlR2F1c3NpYW5CbHVyIGluPSJTb3VyY2VHcmFwaGljIiBzdGREZXZpYXRpb249IjE2Ii8+PC9maWx0ZXI+PGxpbmVhckdyYWRpZW50IGlkPSJzIiB4Mj0iMCIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2JiYiIgc3RvcC1vcGFjaXR5PSIuMSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1vcGFjaXR5PSIuMSIvPjwvbGluZWFyR3JhZGllbnQ+PGNsaXBQYXRoIGlkPSJyIj48cmVjdCB3aWR0aD0iMTU1IiBoZWlnaHQ9IjIwIiByeD0iMyIgZmlsbD0iI2ZmZiIvPjwvY2xpcFBhdGg+PGcgY2xpcC1wYXRoPSJ1cmwoI3IpIj48cmVjdCB3aWR0aD0iMTEwIiBoZWlnaHQ9IjIwIiBmaWxsPSIjNTU1Ii8+PHJlY3QgeD0iMTEwIiB3aWR0aD0iNDUiIGhlaWdodD0iMjAiIGZpbGw9IiMwMDdlYzYiLz48cmVjdCB3aWR0aD0iMTU1IiBoZWlnaHQ9IjIwIiBmaWxsPSJ1cmwoI3MpIi8+PC9nPjxnIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJWZXJkYW5hLEdlbmV2YSxEZWphVnUgU2FucyxzYW5zLXNlcmlmIiB0ZXh0LXJlbmRlcmluZz0iZ2VvbWV0cmljUHJlY2lzaW9uIiBmb250LXNpemU9IjExMCI+PGltYWdlIHg9IjUiIHk9IjMiIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgaHJlZj0iZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCbWFXeHNQU0lqTkRJNE5VWTBJaUJ5YjJ4bFBTSnBiV2NpSUhacFpYZENiM2c5SWpBZ01DQXlOQ0F5TkNJZ2VHMXNibk05SW1oMGRIQTZMeTkzZDNjdWR6TXViM0puTHpJd01EQXZjM1puSWo0OGRHbDBiR1UrUjI5dloyeGxJRk5qYUc5c1lYSThMM1JwZEd4bFBqeHdZWFJvSUdROUlrMDFMakkwTWlBeE15NDNOamxNTUNBNUxqVWdNVElnTUd3eE1pQTVMalV0TlM0eU5ESWdOQzR5TmpsRE1UY3VOVFE0SURFeExqSTBPU0F4TkM0NU56Z2dPUzQxSURFeUlEa3VOV010TWk0NU56Y2dNQzAxTGpVME9DQXhMamMwT0MwMkxqYzFPQ0EwTGpJMk9YcE5NVElnTVRCaE55QTNJREFnTVNBd0lEQWdNVFFnTnlBM0lEQWdNQ0F3SURBdE1UUjZJaTgrUEM5emRtYysiLz48dGV4dCBhcmlhLWhpZGRlbj0idHJ1ZSIgeD0iNjQ1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjgwIiBmaWx0ZXI9InVybCgjYmx1cikiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSI4MzAiPkdvb2dsZSBTY2hvbGFyPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI2NDUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjgzMCI+R29vZ2xlIFNjaG9sYXI8L3RleHQ+PHRleHQgeD0iNjQ1IiB5PSIxNDAiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiBmaWxsPSIjZmZmIiB0ZXh0TGVuZ3RoPSI4MzAiPkdvb2dsZSBTY2hvbGFyPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSIxMzE1IiB5PSIxNTAiIGZpbGw9IiMwMTAxMDEiIGZpbGwtb3BhY2l0eT0iLjgwIiBmaWx0ZXI9InVybCgjYmx1cikiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiB0ZXh0TGVuZ3RoPSIzNTAiPlByb2ZpbGU8L3RleHQ+PHRleHQgYXJpYS1oaWRkZW49InRydWUiIHg9IjEzMTUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjM1MCI+UHJvZmlsZTwvdGV4dD48dGV4dCB4PSIxMzE1IiB5PSIxNDAiIHRyYW5zZm9ybT0ic2NhbGUoLjEpIiBmaWxsPSIjZmZmIiB0ZXh0TGVuZ3RoPSIzNTAiPlByb2ZpbGU8L3RleHQ+PC9nPjwvc3ZnPg==" class="img-fluid"></a></p>
+</div>
+<div class="stat-cards">
+<div class="stat-card">
+<span class="stat-icon">📚</span>
+<div>
+<div class="stat-label">
+Total Citations
+</div>
+<div class="stat-value">
+1090
+</div>
+</div>
+</div>
+<div class="stat-card">
+<span class="stat-icon">🧠</span>
+<div>
+<div class="stat-label">
+h-index
+</div>
+<div class="stat-value">
+9
+</div>
+</div>
+</div>
+<div class="stat-card">
+<span class="stat-icon">🏆</span>
+<div>
+<div class="stat-label">
+i10-index
+</div>
+<div class="stat-value">
+9
+</div>
+</div>
+</div>
 </div>
 </div>
 <div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-2a6ac2c224cc2075f893" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-2a6ac2c224cc2075f893">{"x":{"visdat":{"21df42e21463":["function () ","plotlyVisDat"]},"cur_data":"21df42e21463","attrs":{"21df42e21463":{"x":{},"y":{},"marker":{"color":"#1a73e8"},"hoverinfo":"text","text":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":80,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"tickmode":"array","tickvals":[2020,2021,2022,2023,2024,2025,2026],"ticktext":[2020,2021,2022,2023,2024,2025,2026],"tickangle":-45,"title":"year"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Citations"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[2020,2021,2022,2023,2024,2025,2026],"y":[6,29,127,180,235,338,167],"marker":{"color":"#1a73e8","line":{"color":"rgba(31,119,180,1)"}},"hoverinfo":["text","text","text","text","text","text","text"],"text":["Year: 2020 <br>Citations: 6","Year: 2021 <br>Citations: 29","Year: 2022 <br>Citations: 127","Year: 2023 <br>Citations: 180","Year: 2024 <br>Citations: 235","Year: 2025 <br>Citations: 338","Year: 2026 <br>Citations: 167"],"type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-3303d1f5271470465704" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-3303d1f5271470465704">{"x":{"visdat":{"23863b8601e4":["function () ","plotlyVisDat"]},"cur_data":"23863b8601e4","attrs":{"23863b8601e4":{"x":{},"y":{},"marker":{"color":"#1a73e8"},"hoverinfo":"text","text":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":80,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"tickmode":"array","tickvals":[2020,2021,2022,2023,2024,2025,2026],"ticktext":[2020,2021,2022,2023,2024,2025,2026],"tickangle":-45,"title":"year"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Citations"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[2020,2021,2022,2023,2024,2025,2026],"y":[6,29,127,180,235,338,167],"marker":{"color":"#1a73e8","line":{"color":"rgba(31,119,180,1)"}},"hoverinfo":["text","text","text","text","text","text","text"],"text":["Year: 2020 <br>Citations: 6","Year: 2021 <br>Citations: 29","Year: 2022 <br>Citations: 127","Year: 2023 <br>Citations: 180","Year: 2024 <br>Citations: 235","Year: 2025 <br>Citations: 338","Year: 2026 <br>Citations: 167"],"type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
 </div>
-<section id="scientific-papers" class="level3">
+<section id="scientific-papers" class="level3 pub-section">
 <h3 class="anchored" data-anchor-id="scientific-papers">Scientific papers</h3>
 <section id="section" class="level4">
 <h4 class="anchored" data-anchor-id="section">2025</h4>
@@ -7016,7 +7121,7 @@ P. Herst, J. Aars, C. Joly-Beauparlant, <u><strong>A. Bodein</strong></u>, M. Da
 </ul>
 </section>
 </section>
-<section id="r-packages" class="level3">
+<section id="r-packages" class="level3 pkg-section">
 <h3 class="anchored" data-anchor-id="r-packages">R Packages</h3>
 <ul>
 <li><p>netOmics <span class="cvdate"><em>2021</em></span><br>
@@ -7025,8 +7130,9 @@ BioConductor (2021) <a href="https://doi.org/10.18129/B9.bioc.netOmics">doi.org/
 <li><p>timeOmics <span class="cvdate"><em>2019</em></span><br>
 <u><strong>A. Bodein</strong></u> , O. Chapleur, A. Droit, K-A. Lê Cao BioConductor (2019) <a href="https://doi.org/10.18129/B9.bioc.timeOmics">doi.org/10.18129/B9.bioc.timeOmics</a></p></li>
 </ul>
-<hr>
 </section>
+<hr>
+<div class="conf-section">
 <section id="talks" class="level3">
 <h3 class="anchored" data-anchor-id="talks">Talks</h3>
 <ul>
@@ -7055,9 +7161,10 @@ M.P. Scott-Boyer, <u><strong>A. Bodein</strong></u>, K-A. Lê Cao, O. Perin, A. 
 Y. Laurent, J. Denonfoux, <u><strong>A. Bodein</strong></u>, S. Ferreira<br>
 <em>Presented to : Journées Ouvertes en Biologie, Informatique et Mathématiques (JOBIM), Lille, France</em></p></li>
 </ul>
-
-
 </section>
+</div>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
