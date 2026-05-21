@@ -104,7 +104,7 @@ hr { border: none; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
 </style>
 ```
 
-```{r import_scholar, echo=FALSE}
+```{r import_scholar, echo=FALSE, warning=FALSE, message=FALSE}
 library("scholar")
 id <- "p-N6-8YAAAAJ"
 x <- get_profile(id)
