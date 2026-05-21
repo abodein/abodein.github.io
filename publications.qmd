@@ -256,6 +256,10 @@ plot_ly(
 
 ### Posters
 
+-   *Informatique quantique pour l'analyse des réseaux biologiques : fondements, algorithmes pour la prédiction de la toxicité* [*Mar. 2026*]{.cvdate}\
+    V. Bransolle, [**A. Bodein**]{.underline}, A. Mathieu, A. Droit\
+    *Presented to : Journée de l'Axe Endo-néphrologie, Québec, Canada*
+
 -   *Prediction of Drug-Induced Liver Toxicity through Topological Motif Analysis in Protein Networks* [*May 2025*]{.cvdate} D. Benyakhlaf, [**A. Bodein**]{.underline}, A. Droit\
     *Presented to : Journées de la Recherche du CHU de Québec, Québec, Canada*
 
