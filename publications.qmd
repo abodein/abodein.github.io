@@ -25,30 +25,30 @@ format:
   display: flex;
   align-items: center;
   gap: 0.85rem;
-  background: #f8faff;
-  border: 1px solid #dce8fb;
+  background: var(--bs-secondary-bg);
+  border: 1px solid var(--bs-border-color);
   border-left: 4px solid #1a73e8;
   border-radius: 10px;
   padding: 0.65rem 1rem;
 }
 .stat-icon { font-size: 1.35rem; flex-shrink: 0; }
-.stat-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: #6b7280; margin: 0; }
+.stat-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--bs-secondary-color); margin: 0; }
 .stat-value { font-size: 1.45rem; font-weight: 700; color: #1a73e8; margin: 0; line-height: 1.1; }
 
 /* ─── PUBLICATION CARDS ─────────────────────────────────── */
 .pub-section ul { list-style: none; padding-left: 0; }
 .pub-section li {
-  background: #fff;
-  border: 1px solid #e5e7eb;
+  background: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color);
   border-left: 4px solid #1a73e8;
   border-radius: 10px;
   padding: 0.9rem 1.2rem;
   margin: 0.55rem 0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 .pub-section li:hover {
-  box-shadow: 0 4px 16px rgba(26,115,232,0.15);
+  box-shadow: 0 4px 16px rgba(26,115,232,0.2);
   transform: translateX(5px);
 }
 /* Year pill badges */
@@ -69,38 +69,38 @@ format:
 /* ─── R PACKAGES ─────────────────────────────────────────── */
 .pkg-section ul { list-style: none; padding-left: 0; }
 .pkg-section li {
-  background: #faf8ff;
-  border: 1px solid #e0dbfb;
+  background: var(--bs-secondary-bg);
+  border: 1px solid var(--bs-border-color);
   border-left: 4px solid #6366f1;
   border-radius: 10px;
   padding: 0.9rem 1.2rem;
   margin: 0.55rem 0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 .pkg-section li:hover {
-  box-shadow: 0 4px 16px rgba(99,102,241,0.15);
+  box-shadow: 0 4px 16px rgba(99,102,241,0.2);
   transform: translateX(5px);
 }
 
 /* ─── TALKS & POSTERS ────────────────────────────────────── */
 .conf-section ul { list-style: none; padding-left: 0; }
 .conf-section li {
-  background: #f9fffe;
-  border: 1px solid #d0f0e8;
+  background: var(--bs-secondary-bg);
+  border: 1px solid var(--bs-border-color);
   border-left: 4px solid #10b981;
   border-radius: 10px;
   padding: 0.9rem 1.2rem;
   margin: 0.55rem 0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 .conf-section li:hover {
-  box-shadow: 0 4px 16px rgba(16,185,129,0.15);
+  box-shadow: 0 4px 16px rgba(16,185,129,0.2);
   transform: translateX(5px);
 }
 
-hr { border: none; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
+hr { border: none; border-top: 1px solid var(--bs-border-color); margin: 2rem 0; }
 </style>
 ```
 
