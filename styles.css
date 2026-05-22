@@ -8,14 +8,7 @@
   margin: 0 auto;
 }
 
-/* Prevent navbar height shift when toggling dark mode */
+/* Normalize navbar height between cosmo (0.5rem) and darkly (1rem) themes */
 .navbar {
-  min-height: 56px;
-  align-items: center;
-}
-.quarto-color-scheme-toggle {
-  display: flex !important;
-  align-items: center;
-  padding: 0.25rem !important;
-  line-height: 1 !important;
+  --bs-navbar-padding-y: 0.5rem;
 }
