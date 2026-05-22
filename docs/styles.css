@@ -2,8 +2,20 @@
 
 .sidebar .logo img {
   border-radius: 50%;
-  width: 120px;       /* adapte à la taille souhaitée */
+  width: 120px;
   height: 120px;
   object-fit: cover;
   margin: 0 auto;
+}
+
+/* Prevent navbar height shift when toggling dark mode */
+.navbar {
+  min-height: 56px;
+  align-items: center;
+}
+.quarto-color-scheme-toggle {
+  display: flex !important;
+  align-items: center;
+  padding: 0.25rem !important;
+  line-height: 1 !important;
 }

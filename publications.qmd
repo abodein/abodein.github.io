@@ -101,6 +101,18 @@ format:
 }
 
 hr { border: none; border-top: 1px solid var(--bs-border-color); margin: 2rem 0; }
+
+/* ─── PLOTLY DARK MODE ───────────────────────────────────── */
+.js-plotly-plot .plotly .bg {
+  fill: transparent !important;
+}
+.js-plotly-plot .plotly text {
+  fill: var(--bs-body-color) !important;
+}
+.js-plotly-plot .plotly .gridlayer path,
+.js-plotly-plot .plotly .zerolinelayer path {
+  stroke: var(--bs-border-color) !important;
+}
 </style>
 ```
 
@@ -147,6 +159,8 @@ plot_ly(
   text = ~paste("Year:", year, "<br>Citations:", cites)
 ) %>%
   layout(
+    paper_bgcolor = 'rgba(0,0,0,0)',
+    plot_bgcolor  = 'rgba(0,0,0,0)',
     xaxis = list(
       tickmode = "array",
       tickvals = citations$year,
