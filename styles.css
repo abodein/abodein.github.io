@@ -1,4 +1,98 @@
-/* css styles */
+/* =============================================================================
+   Style « verre » AD Lab appliqué au site (même charte que le journal de bord).
+   Couleurs : uniquement des tokens de adlab-tokens.css, chargé avant.
+   ============================================================================= */
+
+/* --- Bootstrap branché sur les tokens (clair et sombre) -------------------- */
+body {
+  --bs-body-color: var(--adlab-ink);
+  --bs-body-bg: var(--adlab-paper);
+  --bs-emphasis-color: var(--adlab-ink);
+  --bs-secondary-color: var(--adlab-ink-soft);
+  --bs-secondary-bg: var(--adlab-glass-strong);
+  --bs-border-color: var(--adlab-glass-line);
+  --bs-heading-color: var(--adlab-primary);
+  --bs-code-color: var(--adlab-code-fg);
+  --bs-body-font-family: var(--adlab-font-sans);
+
+  background: var(--adlab-canvas);
+  background-attachment: fixed;
+  color: var(--adlab-ink);
+  font-family: var(--adlab-font-sans);
+}
+
+h1, h2, h3, h4, h5, h6, .title { color: var(--adlab-primary); font-family: var(--adlab-font-sans); }
+h2 { border-bottom: 1px solid var(--adlab-glass-line); padding-bottom: 0.3rem; }
+
+/* Lien au repos en #026dba (5.4 sur blanc) : #33a4f5 échoue en clair. */
+a { color: var(--adlab-link-hover); }
+a:hover { color: var(--adlab-link); }
+body.quarto-dark a { color: var(--adlab-link); }
+body.quarto-dark a:hover { color: var(--adlab-link-hover); }
+
+code:not(.sourceCode) { color: var(--adlab-code-fg); background: var(--adlab-code-bg); }
+
+/* --- Barre de navigation : verre, onglets en pilule ------------------------ */
+.navbar {
+  --bs-navbar-padding-y: 0.5rem;   /* même hauteur sous cosmo et darkly */
+  background: var(--adlab-glass) !important;
+  border-bottom: 1px solid var(--adlab-glass-edge);
+  box-shadow: var(--adlab-shadow);
+  -webkit-backdrop-filter: var(--adlab-glass-blur);
+  backdrop-filter: var(--adlab-glass-blur);
+}
+.navbar .navbar-title,
+.navbar .navbar-brand { color: var(--adlab-primary) !important; font-weight: 700; }
+.navbar .nav-link,
+.navbar .quarto-navigation-tool,
+.navbar .navbar-toggler { color: var(--adlab-ink-soft) !important; }
+.navbar .nav-link { border-radius: var(--adlab-radius-pill); padding: 0.35rem 1rem !important; font-weight: 600; }
+.navbar .nav-link:hover { color: var(--adlab-ink) !important; background: var(--adlab-glass-line); }
+.navbar .nav-link.active { background: var(--adlab-primary); color: var(--adlab-on-primary) !important; }
+.navbar .navbar-toggler-icon { filter: none; }
+
+/* --- Contenu : boîte de lecture (texte dense), sommaire en verre ---------- */
+main.content {
+  background: var(--adlab-glass-read);
+  border: 1px solid var(--adlab-glass-edge);
+  border-radius: var(--adlab-radius-lg);
+  box-shadow: var(--adlab-shadow);
+  -webkit-backdrop-filter: var(--adlab-glass-blur);
+  backdrop-filter: var(--adlab-glass-blur);
+  padding: 1.5rem 2rem 2rem;
+  margin-top: 1.5rem;
+}
+@media (max-width: 767.98px) {
+  main.content { padding: 1rem 1.1rem 1.5rem; border-radius: var(--adlab-radius-md); }
+}
+
+#TOC, nav#TOC {
+  background: var(--adlab-glass);
+  border: 1px solid var(--adlab-glass-edge);
+  border-radius: var(--adlab-radius-md);
+  box-shadow: var(--adlab-shadow);
+  padding: 0.9rem 1rem;
+  margin-top: 1.5rem;
+}
+#TOC h2, #toc-title { border: none; color: var(--adlab-ink-soft); font-size: 0.75rem;
+  text-transform: uppercase; letter-spacing: 0.06em; }
+.sidebar nav[role="doc-toc"] ul > li > a { color: var(--adlab-ink-soft); }
+.sidebar nav[role="doc-toc"] ul > li > a.active {
+  color: var(--adlab-primary); border-left-color: var(--adlab-primary); font-weight: 600;
+}
+
+/* --- Accueil (template jolla) ---------------------------------------------- */
+.quarto-about-jolla .about-image {
+  border: 4px solid var(--adlab-focus);
+  box-shadow: var(--adlab-shadow-focus);
+}
+.quarto-about-jolla .about-link {
+  color: var(--adlab-primary) !important;
+  background: var(--adlab-glass-strong);
+  border: 1px solid var(--adlab-glass-edge) !important;
+  border-radius: var(--adlab-radius-pill) !important;
+}
+.quarto-about-jolla .about-link:hover { background: var(--adlab-tint); }
 
 .sidebar .logo img {
   border-radius: 50%;
@@ -8,7 +102,89 @@
   margin: 0 auto;
 }
 
-/* Normalize navbar height between cosmo (0.5rem) and darkly (1rem) themes */
-.navbar {
-  --bs-navbar-padding-y: 0.5rem;
+/* --- CV ------------------------------------------------------------------- */
+.cvdate { float: right; color: var(--adlab-ink-soft); font-size: 0.9em; }
+
+/* --- Publications ---------------------------------------------------------- */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 767.98px) { .metrics-grid { grid-template-columns: 1fr; } }
+.scholar-badge { margin-bottom: 1rem; }
+.stat-cards { display: flex; flex-direction: column; gap: 0.6rem; }
+.stat-card {
+  display: flex; align-items: center; gap: 0.85rem;
+  background: var(--adlab-accent-4-bg);
+  border: 1px solid var(--adlab-glass-edge);
+  border-radius: var(--adlab-radius-md);
+  padding: 0.65rem 1rem;
+}
+.stat-card p { margin: 0; }
+.stat-icon { font-size: 1.35rem; flex-shrink: 0; }
+.stat-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--adlab-ink-soft); margin: 0; }
+.stat-value { font-size: 1.45rem; font-weight: 700; color: var(--adlab-primary); margin: 0; line-height: 1.1; }
+
+/* Cartes : verre opaque, filet gauche = l'accent de la section. */
+.pub-section, .pkg-section, .conf-section { --sec-accent: var(--adlab-primary); }
+.pkg-section  { --sec-accent: var(--adlab-accent-1); }
+.conf-section { --sec-accent: var(--adlab-accent-2); }
+.pub-section ul, .pkg-section ul, .conf-section ul { list-style: none; padding-left: 0; }
+.pub-section li, .pkg-section li, .conf-section li {
+  background: var(--adlab-glass-strong);
+  border: 1px solid var(--adlab-glass-edge);
+  border-left: 4px solid var(--sec-accent);
+  border-radius: var(--adlab-radius-sm);
+  padding: 0.9rem 1.2rem;
+  margin: 0.55rem 0;
+  box-shadow: var(--adlab-shadow);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.pub-section li:hover, .pkg-section li:hover, .conf-section li:hover {
+  box-shadow: var(--adlab-shadow-focus);
+  transform: translateX(5px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .pub-section li, .pkg-section li, .conf-section li { transition: none; }
+  .pub-section li:hover, .pkg-section li:hover, .conf-section li:hover { transform: none; }
+}
+
+/* Années en pilule : aplat bleu labo, texte blanc. */
+.pub-section h4 {
+  background: var(--adlab-primary);
+  color: var(--adlab-on-primary) !important;
+  font-size: 0.85rem; font-weight: 600;
+  padding: 0.22rem 0.9rem;
+  border-radius: var(--adlab-radius-pill);
+  margin-top: 1.8rem; margin-bottom: 0.7rem;
+  width: fit-content;
+}
+.pub-section h4 .anchor { display: none !important; }
+.pub-section h4 a { color: var(--adlab-on-primary) !important; text-decoration: none; }
+
+hr { border: none; border-top: 1px solid var(--adlab-glass-line); margin: 2rem 0; }
+
+/* Plotly : fond transparent, textes et barres sur les tokens. */
+.js-plotly-plot .plotly .bg { fill: transparent !important; }
+.js-plotly-plot .plotly text { fill: var(--adlab-ink) !important; }
+.js-plotly-plot .plotly .gridlayer path,
+.js-plotly-plot .plotly .zerolinelayer path { stroke: var(--adlab-rule) !important; }
+.js-plotly-plot .plotly .barlayer .point path { fill: var(--adlab-primary) !important; }
+
+/* --- Pied de page ---------------------------------------------------------- */
+.nav-footer {
+  background: transparent !important;
+  border-top: 1px solid var(--adlab-glass-line);
+  color: var(--adlab-ink-soft);
+}
+.nav-footer a { color: var(--adlab-ink-soft); }
+.nav-footer a:hover { color: var(--adlab-primary); }
+
+@media print {
+  body { background: var(--adlab-paper); }
+  .navbar, main.content, #TOC { background: var(--adlab-paper) !important; box-shadow: none;
+    -webkit-backdrop-filter: none; backdrop-filter: none; }
 }

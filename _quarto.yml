@@ -24,7 +24,9 @@ format:
     theme:
       light: cosmo
       dark: darkly
-    css: styles.css
+    css:
+      - adlab-tokens.css
+      - styles.css
     toc: true
     toc-location: right
     toc-depth: 3

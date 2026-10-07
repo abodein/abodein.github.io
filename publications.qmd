@@ -9,113 +9,6 @@ format:
     toc-depth: 3
 ---
 
-```{=html}
-<style>
-/* ─── METRICS ──────────────────────────────────────────── */
-.metrics-grid {
-  display: grid;
-  grid-template-columns: 210px 1fr;
-  gap: 2rem;
-  align-items: center;
-  margin-bottom: 2.5rem;
-}
-.scholar-badge { margin-bottom: 1rem; }
-.stat-cards { display: flex; flex-direction: column; gap: 0.6rem; }
-.stat-card {
-  display: flex;
-  align-items: center;
-  gap: 0.85rem;
-  background: var(--bs-secondary-bg);
-  border: 1px solid var(--bs-border-color);
-  border-left: 4px solid #1a73e8;
-  border-radius: 10px;
-  padding: 0.65rem 1rem;
-}
-.stat-icon { font-size: 1.35rem; flex-shrink: 0; }
-.stat-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--bs-secondary-color); margin: 0; }
-.stat-value { font-size: 1.45rem; font-weight: 700; color: #1a73e8; margin: 0; line-height: 1.1; }
-
-/* ─── PUBLICATION CARDS ─────────────────────────────────── */
-.pub-section ul { list-style: none; padding-left: 0; }
-.pub-section li {
-  background: var(--bs-body-bg);
-  border: 1px solid var(--bs-border-color);
-  border-left: 4px solid #1a73e8;
-  border-radius: 10px;
-  padding: 0.9rem 1.2rem;
-  margin: 0.55rem 0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-.pub-section li:hover {
-  box-shadow: 0 4px 16px rgba(26,115,232,0.2);
-  transform: translateX(5px);
-}
-/* Year pill badges */
-.pub-section h4 {
-  background: #1a73e8;
-  color: #fff !important;
-  font-size: 0.85rem;
-  font-weight: 600;
-  padding: 0.22rem 0.9rem;
-  border-radius: 999px;
-  margin-top: 1.8rem;
-  margin-bottom: 0.7rem;
-  width: fit-content;
-}
-.pub-section h4 .anchor { display: none !important; }
-.pub-section h4 a { color: #fff !important; text-decoration: none; }
-
-/* ─── R PACKAGES ─────────────────────────────────────────── */
-.pkg-section ul { list-style: none; padding-left: 0; }
-.pkg-section li {
-  background: var(--bs-secondary-bg);
-  border: 1px solid var(--bs-border-color);
-  border-left: 4px solid #6366f1;
-  border-radius: 10px;
-  padding: 0.9rem 1.2rem;
-  margin: 0.55rem 0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-.pkg-section li:hover {
-  box-shadow: 0 4px 16px rgba(99,102,241,0.2);
-  transform: translateX(5px);
-}
-
-/* ─── TALKS & POSTERS ────────────────────────────────────── */
-.conf-section ul { list-style: none; padding-left: 0; }
-.conf-section li {
-  background: var(--bs-secondary-bg);
-  border: 1px solid var(--bs-border-color);
-  border-left: 4px solid #10b981;
-  border-radius: 10px;
-  padding: 0.9rem 1.2rem;
-  margin: 0.55rem 0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.07);
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-.conf-section li:hover {
-  box-shadow: 0 4px 16px rgba(16,185,129,0.2);
-  transform: translateX(5px);
-}
-
-hr { border: none; border-top: 1px solid var(--bs-border-color); margin: 2rem 0; }
-
-/* ─── PLOTLY DARK MODE ───────────────────────────────────── */
-.js-plotly-plot .plotly .bg {
-  fill: transparent !important;
-}
-.js-plotly-plot .plotly text {
-  fill: var(--bs-body-color) !important;
-}
-.js-plotly-plot .plotly .gridlayer path,
-.js-plotly-plot .plotly .zerolinelayer path {
-  stroke: var(--bs-border-color) !important;
-}
-</style>
-```
-
 ```{r import_scholar, echo=FALSE, warning=FALSE, message=FALSE}
 library("scholar")
 id <- "p-N6-8YAAAAJ"
@@ -123,28 +16,65 @@ x <- get_profile(id)
 citations <- get_citation_history(id)
 ```
 
-<div class="metrics-grid">
+::::::::::::::::::: metrics-grid
 <div>
-<div class="scholar-badge">
 
+::: scholar-badge
 [![](https://img.shields.io/badge/Google%20Scholar-Profile-blue?logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=p-N6-8YAAAAJ)
+:::
+
+::::::::::::::: stat-cards
+:::::: stat-card
+[📚]{.stat-icon}
+
+<div>
+
+::: stat-label
+Total Citations
+:::
+
+::: stat-value
+`r x$total_cites`
+:::
 
 </div>
-<div class="stat-cards">
-<div class="stat-card">
-<span class="stat-icon">📚</span>
-<div><div class="stat-label">Total Citations</div><div class="stat-value">`r x$total_cites`</div></div>
+::::::
+
+:::::: stat-card
+[🧠]{.stat-icon}
+
+<div>
+
+::: stat-label
+h-index
+:::
+
+::: stat-value
+`r x$h_index`
+:::
+
 </div>
-<div class="stat-card">
-<span class="stat-icon">🧠</span>
-<div><div class="stat-label">h-index</div><div class="stat-value">`r x$h_index`</div></div>
+::::::
+
+:::::: stat-card
+[🏆]{.stat-icon}
+
+<div>
+
+::: stat-label
+i10-index
+:::
+
+::: stat-value
+`r x$i10_index`
+:::
+
 </div>
-<div class="stat-card">
-<span class="stat-icon">🏆</span>
-<div><div class="stat-label">i10-index</div><div class="stat-value">`r x$i10_index`</div></div>
+::::::
+:::::::::::::::
+
 </div>
-</div>
-</div>
+
 <div>
 
 ```{r plot_citations, echo=FALSE, message=FALSE, warning=FALSE}
@@ -154,8 +84,9 @@ plot_ly(
   x = ~year,
   y = ~cites,
   type = 'bar',
-  marker = list(color = '#1a73e8'),
+  marker = list(color = '#1A468F'),
   hoverinfo = 'text',
+  textposition = 'none',
   text = ~paste("Year:", year, "<br>Citations:", cites)
 ) %>%
   layout(
@@ -173,10 +104,9 @@ plot_ly(
 ```
 
 </div>
-</div>
+:::::::::::::::::::
 
 ::: pub-section
-
 ### Scientific papers
 
 #### 2025
@@ -242,11 +172,9 @@ plot_ly(
 
 -   *A generic multivariate framework for the integration of microbiome longitudinal studies with other data types*\
     [**A. Bodein**]{.underline}, O. Chapleur, A. Droit, K-A. Lê Cao <br> Frontiers in Genetics, <https://doi.org/10.3389/fgene.2019.00963>
-
 :::
 
 ::: pkg-section
-
 ### R Packages
 
 -   netOmics [*2021*]{.cvdate}\
@@ -255,18 +183,16 @@ plot_ly(
 
 -   timeOmics [*2019*]{.cvdate}\
     [**A. Bodein**]{.underline} , O. Chapleur, A. Droit, K-A. Lê Cao BioConductor (2019) [doi.org/10.18129/B9.bioc.timeOmics](https://doi.org/10.18129/B9.bioc.timeOmics)
-
 :::
 
----
+------------------------------------------------------------------------
 
 ::: conf-section
-
 ### Talks
 
 -   Integration of Microbiome and Multi-Omics Longitudinal Data <br> [**A. Bodein**]{.underline} , O. Chapleur, A. Droit, K-A. Lê Cao [*2019*]{.cvdate} Presented to : 3\textsuperscript{rd} Workshop in Statistical Algorithms Challenges in Microbiome Data Analysis, New-York, USA
 
----
+------------------------------------------------------------------------
 
 ### Posters
 
@@ -296,5 +222,4 @@ plot_ly(
 -   *WHORMSS® : Taxonomic and functional exploration from metagenome shotgun sequencing* [*July 2017*]{.cvdate}\
     Y. Laurent, J. Denonfoux, [**A. Bodein**]{.underline}, S. Ferreira\
     *Presented to : Journées Ouvertes en Biologie, Informatique et Mathématiques (JOBIM), Lille, France*
-
 :::

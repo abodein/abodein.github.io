@@ -1,0 +1,130 @@
+/* =============================================================================
+   AD Lab — tokens de marque, portables
+   Arnaud Droit's Computational Biology Laboratory (compbio.ca)
+
+   La palette, la typographie et les surfaces d'interface (style « verre ») :
+   aucun sélecteur de mise en page, aucune dépendance à Quarto. À copier tel
+   quel dans un artifact, un dashboard, une slide ou toute page HTML, puis
+   référencer les variables (composants du style verre : adlab-glass.css) :
+
+       body   { background: var(--adlab-paper); color: var(--adlab-ink); }
+       h1, h2 { color: var(--adlab-primary); }
+
+   Le gabarit complet des rapports Quarto est dans adlab_html.css, qui déclare
+   ces mêmes tokens. Les deux fichiers doivent rester synchronisés.
+
+   THÈME : le bloc `:root` nu porte le thème clair (référence de la charte).
+   Les deux blocs suivants rejouent les MÊMES rôles en version sombre — l'un
+   pour le réglage « système », l'autre pour un choix explicite. Toute couleur
+   ajoutée doit l'être dans les trois blocs.
+   ============================================================================= */
+
+/* --- Thème clair : la charte de référence -------------------------------- */
+
+:root {
+  /* Principales */
+  --adlab-primary:      #1A468F;   /* bleu labo : titres, élément dominant     */
+  --adlab-primary-soft: #9DD3E4;   /* bleu clair : accent secondaire           */
+  --adlab-ink:          #333333;   /* texte, axes                              */
+  --adlab-paper:        #ffffff;   /* fond                                     */
+  --adlab-on-primary:   #ffffff;   /* texte sur aplat bleu labo                */
+  --adlab-rule:         #DEDEDF;   /* filets, bordures, grilles                */
+  --adlab-mute:         #a9a9a9;   /* série de référence, valeur non typée     */
+
+  /* Liens et états */
+  --adlab-link:         #33a4f5;
+  --adlab-link-hover:   #026dba;
+  --adlab-link-on-primary: #96d6ff;/* lien posé sur un aplat --adlab-primary   */
+  --adlab-tint:         #e0f3ff;   /* survol de ligne, surface active          */
+
+  /* Accents — cycle : violet, teal, rouge, bleu, magenta */
+  --adlab-accent-1:     #6B5FAC;   --adlab-accent-1-bg: #ECEBF4;
+  --adlab-accent-2:     #21A3BF;   --adlab-accent-2-bg: #EBF8FB;
+  --adlab-accent-3:     #DC3030;   --adlab-accent-3-bg: #FBE9E9;
+  --adlab-accent-4:     #5D9FFF;   --adlab-accent-4-bg: #E7F1FF;
+  --adlab-accent-5:     #AF30AB;   --adlab-accent-5-bg: #FCF2FC;
+
+  /* Code */
+  --adlab-code-fg:      #92278F;
+  --adlab-code-bg:      #FCF2FC;
+
+  /* Rampes — gradient (heatmap) et divergente (Z-scores) */
+  --adlab-ramp-low:     #f2f7fc;
+  --adlab-ramp-high:    #1A468F;
+  --adlab-div-low:      #DC3030;
+  --adlab-div-mid:      #f7f7f7;
+  --adlab-div-high:     #1A468F;
+
+  /* Typographie */
+  --adlab-font-sans: "DejaVu Sans", "Helvetica Neue", Arial, sans-serif;
+  --adlab-font-mono: Consolas, "DejaVu Sans Mono", "SFMono-Regular", monospace;
+
+  /* Surfaces d'interface — style « verre » (écrans uniquement, voir adlab-glass.css).
+     Le fond est un dégradé pastel tiré des accents 4 (bleu), 1 (violet), 2 (teal). */
+  --adlab-canvas:
+    radial-gradient(900px 620px at 6% 0%, rgba(93, 159, 255, 0.24), transparent 70%),
+    radial-gradient(820px 620px at 96% 6%, rgba(107, 95, 172, 0.20), transparent 70%),
+    radial-gradient(1000px 720px at 55% 105%, rgba(33, 163, 191, 0.16), transparent 70%),
+    #edf1f8;
+  --adlab-glass:        rgba(255, 255, 255, 0.58);  /* boîte translucide            */
+  --adlab-glass-read:   rgba(255, 255, 255, 0.70);  /* boîte de lecture (texte dense) */
+  --adlab-glass-strong: rgba(255, 255, 255, 0.80);  /* puce, bouton, carte interne  */
+  --adlab-glass-edge:   rgba(255, 255, 255, 0.90);  /* liseré des boîtes            */
+  --adlab-glass-line:   rgba(26, 70, 143, 0.10);    /* filet interne, survol de ligne */
+  --adlab-focus:        #ffffff;                    /* boîte focale, opaque         */
+  --adlab-shadow:       0 10px 34px rgba(26, 70, 143, 0.09), 0 1px 2px rgba(26, 70, 143, 0.05);
+  --adlab-shadow-focus: 0 18px 44px rgba(26, 70, 143, 0.14), 0 2px 4px rgba(26, 70, 143, 0.05);
+  --adlab-ink-soft:     #5f6673;   /* texte secondaire sur verre : 5.1 au pire cas    */
+  --adlab-glass-blur:   blur(22px) saturate(150%);
+  --adlab-radius-lg: 22px;  --adlab-radius-md: 14px;  --adlab-radius-sm: 10px;  --adlab-radius-pill: 999px;
+}
+
+/* --- Thème sombre : choix explicite (toggle) ----------------------------- */
+/* Adapté au site Quarto : le toggle clair/sombre pose `quarto-dark` sur     */
+/* <body> ; le bloc « système » (prefers-color-scheme) est retiré pour ne    */
+/* pas contredire le thème affiché par Quarto.                               */
+
+body.quarto-dark {
+  --adlab-primary:      #6E9FE0;
+  --adlab-primary-soft: #9DD3E4;
+  --adlab-ink:          #e8eaed;
+  --adlab-paper:        #14181d;
+  --adlab-on-primary:   #0d1117;
+  --adlab-rule:         #2b323c;
+  --adlab-mute:         #8a93a0;
+
+  --adlab-link:         #58b4ff;
+  --adlab-link-hover:   #9ad2ff;
+  --adlab-link-on-primary: #0a2e63;
+  --adlab-tint:         #1e2937;
+
+  --adlab-accent-1:     #9A8FD8;   --adlab-accent-1-bg: #23202e;
+  --adlab-accent-2:     #4FC3DC;   --adlab-accent-2-bg: #142a30;
+  --adlab-accent-3:     #FF6B6B;   --adlab-accent-3-bg: #2e1b1b;
+  --adlab-accent-4:     #7FB3FF;   --adlab-accent-4-bg: #16233a;
+  --adlab-accent-5:     #D96FD5;   --adlab-accent-5-bg: #2c1a2c;
+
+  --adlab-code-fg:      #D98FD6;
+  --adlab-code-bg:      #241d24;
+
+  --adlab-ramp-low:     #14181d;
+  --adlab-ramp-high:    #6E9FE0;
+  --adlab-div-low:      #FF6B6B;
+  --adlab-div-mid:      #2b323c;
+  --adlab-div-high:     #6E9FE0;
+
+  --adlab-canvas:
+    radial-gradient(900px 620px at 6% 0%, rgba(110, 159, 224, 0.16), transparent 70%),
+    radial-gradient(820px 620px at 96% 6%, rgba(154, 143, 216, 0.14), transparent 70%),
+    radial-gradient(1000px 720px at 55% 105%, rgba(79, 195, 220, 0.10), transparent 70%),
+    #0f1318;
+  --adlab-glass:        rgba(29, 35, 43, 0.62);
+  --adlab-glass-read:   rgba(29, 35, 43, 0.78);
+  --adlab-glass-strong: rgba(40, 47, 57, 0.85);
+  --adlab-glass-edge:   rgba(255, 255, 255, 0.08);
+  --adlab-glass-line:   rgba(255, 255, 255, 0.08);
+  --adlab-focus:        #1b2129;
+  --adlab-shadow:       0 10px 34px rgba(0, 0, 0, 0.35), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --adlab-shadow-focus: 0 18px 44px rgba(0, 0, 0, 0.45), 0 2px 4px rgba(0, 0, 0, 0.3);
+  --adlab-ink-soft:     #a3abb6;
+}
