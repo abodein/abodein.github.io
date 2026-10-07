@@ -103,7 +103,40 @@ main.content {
 }
 
 /* --- CV ------------------------------------------------------------------- */
-.cvdate { float: right; color: var(--adlab-ink-soft); font-size: 0.9em; }
+/* Même grammaire que Publications : une carte par poste, filet gauche = accent de la section. */
+.cv-section { --sec-accent: var(--adlab-primary); --sec-accent-bg: var(--adlab-accent-4-bg); }
+.cv-edu   { --sec-accent: var(--adlab-accent-1); --sec-accent-bg: var(--adlab-accent-1-bg); }
+.cv-pub   { --sec-accent: var(--adlab-accent-4); --sec-accent-bg: var(--adlab-accent-4-bg); }
+.cv-skill { --sec-accent: var(--adlab-accent-2); --sec-accent-bg: var(--adlab-accent-2-bg); }
+.cv-other { --sec-accent: var(--adlab-accent-5); --sec-accent-bg: var(--adlab-accent-5-bg); }
+.cv-section { margin-bottom: 2.2rem; }
+.cv-section h3 { font-size: 1.05rem; color: var(--adlab-ink-soft); text-transform: uppercase;
+  letter-spacing: 0.05em; margin-top: 1.6rem; }
+
+.cv-entry,
+.cv-pub p,
+.cv-skill ul:not(ul ul), .cv-other ul:not(ul ul) {
+  background: var(--adlab-glass-strong);
+  border: 1px solid var(--adlab-glass-edge);
+  border-left: 4px solid var(--sec-accent);
+  border-radius: var(--adlab-radius-sm);
+  box-shadow: var(--adlab-shadow);
+  padding: 0.9rem 1.2rem;
+  margin: 0.6rem 0;
+}
+.cv-entry > :last-child, .cv-section ul > li:last-child { margin-bottom: 0; }
+.cv-skill ul:not(ul ul), .cv-other ul:not(ul ul) { padding-left: 2.4rem; }
+.cv-entry ul { margin-top: 0.5rem; }
+.cv-entry li, .cv-skill li, .cv-other li { margin-bottom: 0.25rem; }
+
+/* Dates en pastille, alignées à droite de la carte. */
+.cvdate {
+  float: right; font-size: 0.8rem; font-weight: 600;
+  color: var(--adlab-ink); background: var(--sec-accent-bg, var(--adlab-tint));
+  border-radius: var(--adlab-radius-pill); padding: 0.1rem 0.7rem; margin-left: 0.6rem;
+}
+.cvdate em { font-style: normal; }
+@media (max-width: 575.98px) { .cvdate { float: none; display: inline-block; margin: 0.3rem 0 0; } }
 
 /* --- Publications ---------------------------------------------------------- */
 .metrics-grid {

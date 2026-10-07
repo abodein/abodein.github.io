@@ -26,6 +26,10 @@ about:
       text: Strava
       href: https://www.strava.com/athletes/105933182
       target: _blank
+    - icon: stopwatch
+      text: Sportstats
+      href: https://sportstats.one/fr/profile/235419
+      target: _blank
 ---
 
 I am Antoine Bodein, a highly motivated Ph.D. in Molecular Medicine with a passion for unraveling complex biological questions through computational approaches. With extensive experience at the interface of computational biology and bioinformatics, my expertise spans multi-omics data integration, advanced statistical modeling, and machine learning.

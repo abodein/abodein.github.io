@@ -7007,7 +7007,38 @@ object-fit: cover;
 margin: 0 auto;
 }
 
-.cvdate { float: right; color: var(--adlab-ink-soft); font-size: 0.9em; }
+
+.cv-section { --sec-accent: var(--adlab-primary); --sec-accent-bg: var(--adlab-accent-4-bg); }
+.cv-edu { --sec-accent: var(--adlab-accent-1); --sec-accent-bg: var(--adlab-accent-1-bg); }
+.cv-pub { --sec-accent: var(--adlab-accent-4); --sec-accent-bg: var(--adlab-accent-4-bg); }
+.cv-skill { --sec-accent: var(--adlab-accent-2); --sec-accent-bg: var(--adlab-accent-2-bg); }
+.cv-other { --sec-accent: var(--adlab-accent-5); --sec-accent-bg: var(--adlab-accent-5-bg); }
+.cv-section { margin-bottom: 2.2rem; }
+.cv-section h3 { font-size: 1.05rem; color: var(--adlab-ink-soft); text-transform: uppercase;
+letter-spacing: 0.05em; margin-top: 1.6rem; }
+.cv-entry,
+.cv-pub > p,
+.cv-skill > ul, .cv-other > ul {
+background: var(--adlab-glass-strong);
+border: 1px solid var(--adlab-glass-edge);
+border-left: 4px solid var(--sec-accent);
+border-radius: var(--adlab-radius-sm);
+box-shadow: var(--adlab-shadow);
+padding: 0.9rem 1.2rem;
+margin: 0.6rem 0;
+}
+.cv-entry > :last-child, .cv-skill > ul > li:last-child, .cv-other > ul > li:last-child { margin-bottom: 0; }
+.cv-skill > ul, .cv-other > ul { padding-left: 2.4rem; }
+.cv-entry ul { margin-top: 0.5rem; }
+.cv-entry li, .cv-skill li, .cv-other li { margin-bottom: 0.25rem; }
+
+.cvdate {
+float: right; font-size: 0.8rem; font-weight: 600;
+color: var(--adlab-ink); background: var(--sec-accent-bg, var(--adlab-tint));
+border-radius: var(--adlab-radius-pill); padding: 0.1rem 0.7rem; margin-left: 0.6rem;
+}
+.cvdate em { font-style: normal; }
+@media (max-width: 575.98px) { .cvdate { float: none; display: inline-block; margin: 0.3rem 0 0; } }
 
 .metrics-grid {
 display: grid;
@@ -7210,8 +7241,8 @@ body { background: var(--adlab-paper); }
 <div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-dd96d47c87006e63dd89" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-dd96d47c87006e63dd89">{"x":{"visdat":{"17fcd16ef6b72":["function () ","plotlyVisDat"]},"cur_data":"17fcd16ef6b72","attrs":{"17fcd16ef6b72":{"x":{},"y":{},"marker":{"color":"#1A468F"},"hoverinfo":"text","textposition":"none","text":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":80,"l":60,"t":25,"r":10},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","xaxis":{"domain":[0,1],"automargin":true,"tickmode":"array","tickvals":[2020,2021,2022,2023,2024,2025,2026],"ticktext":[2020,2021,2022,2023,2024,2025,2026],"tickangle":-45,"title":"year"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Citations"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[2020,2021,2022,2023,2024,2025,2026],"y":[6,28,123,179,241,340,336],"marker":{"color":"#1A468F","line":{"color":"rgba(31,119,180,1)"}},"hoverinfo":["text","text","text","text","text","text","text"],"textposition":["none","none","none","none","none","none","none"],"text":["Year: 2020 <br>Citations: 6","Year: 2021 <br>Citations: 28","Year: 2022 <br>Citations: 123","Year: 2023 <br>Citations: 179","Year: 2024 <br>Citations: 241","Year: 2025 <br>Citations: 340","Year: 2026 <br>Citations: 336"],"type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-954660ffd13e78da298d" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-954660ffd13e78da298d">{"x":{"visdat":{"173b3f236891":["function () ","plotlyVisDat"]},"cur_data":"173b3f236891","attrs":{"173b3f236891":{"x":{},"y":{},"marker":{"color":"#1A468F"},"hoverinfo":"text","textposition":"none","text":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":80,"l":60,"t":25,"r":10},"paper_bgcolor":"rgba(0,0,0,0)","plot_bgcolor":"rgba(0,0,0,0)","xaxis":{"domain":[0,1],"automargin":true,"tickmode":"array","tickvals":[2020,2021,2022,2023,2024,2025,2026],"ticktext":[2020,2021,2022,2023,2024,2025,2026],"tickangle":-45,"title":"year"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Citations"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[2020,2021,2022,2023,2024,2025,2026],"y":[6,28,123,179,241,340,336],"marker":{"color":"#1A468F","line":{"color":"rgba(31,119,180,1)"}},"hoverinfo":["text","text","text","text","text","text","text"],"textposition":["none","none","none","none","none","none","none"],"text":["Year: 2020 <br>Citations: 6","Year: 2021 <br>Citations: 28","Year: 2022 <br>Citations: 123","Year: 2023 <br>Citations: 179","Year: 2024 <br>Citations: 241","Year: 2025 <br>Citations: 340","Year: 2026 <br>Citations: 336"],"type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
