@@ -25,7 +25,7 @@ title: "Curriculum Vitae"
 - Courses Taught:
 
   - Computational Genomics [BIF-4004](https://www.ulaval.ca/etudes/cours/bif-4004-genomique-computationnelle)/[BIF-7004](https://www.ulaval.ca/etudes/cours/bif-7004-genomique-computationnelle) (45h)
-  - Introduction to Bioinformatics [BIF-7900](https://www.ulaval.ca/etudes/cours/bif-7900-bio-informatique-i) (45h)
+  - Introduction to Bioinformatics [BIF-7900](https://www.ulaval.ca/etudes/cours/bif-7900-bio-informatique-i) (45h) --- [course material](https://abodein.github.io/intro-bioinformatique/)
     
 - Key Teaching Areas: 
 

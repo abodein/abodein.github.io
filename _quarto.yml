@@ -13,6 +13,8 @@ website:
         file: cv.qmd
       - text: "Publications"
         file: publications.qmd
+      - text: "Teaching"
+        file: teaching.qmd
       - icon: envelope
         href: "mailto:bodein.antoine@gmail.com"
   page-footer:

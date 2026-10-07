@@ -1,0 +1,19 @@
+---
+title: "Teaching"
+---
+
+Course material I develop and teach, openly available (content under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
+
+::::: {.cv-section .cv-edu}
+## 🎓 Université Laval
+
+::: cv-entry
+**Introduction to Bioinformatics** --- [BIF-7900](https://www.ulaval.ca/etudes/cours/bif-7900-bio-informatique-i) <br> *Graduate course, in French* [*Autumn 2026*]{.cvdate}
+
+Linux, R, data manipulation with the *tidyverse*, data visualization and statistics with R.
+Each module includes revealjs slides, three hands-on sessions with solutions, a study guide, a formative exercise and a question bank.
+
+- {{< fa globe >}} [Course website](https://abodein.github.io/intro-bioinformatique/){target=_blank}
+- {{< fa brands github >}} [Source code](https://github.com/abodein/intro-bioinformatique){target=_blank}
+:::
+:::::
