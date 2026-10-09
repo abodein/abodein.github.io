@@ -10,10 +10,11 @@ format:
 ---
 
 ```{r import_scholar, echo=FALSE, warning=FALSE, message=FALSE}
-library("scholar")
-id <- "p-N6-8YAAAAJ"
-x <- get_profile(id)
-citations <- get_citation_history(id)
+# Métriques figées dans data/publications.json : Rscript scripts/update_publications.R
+library(jsonlite)
+pub_data  <- fromJSON("data/publications.json")
+x         <- pub_data$profile
+citations <- x$history
 ```
 
 ::::::::::::::::::: metrics-grid
@@ -21,6 +22,10 @@ citations <- get_citation_history(id)
 
 ::: scholar-badge
 [![](https://img.shields.io/badge/Google%20Scholar-Profile-blue?logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=p-N6-8YAAAAJ)
+:::
+
+::: metrics-updated
+Updated `r d <- as.Date(pub_data$updated); paste(month.name[as.integer(format(d, "%m"))], format(d, "%Y"))` · click a paper for its abstract and citations
 :::
 
 ::::::::::::::: stat-cards
@@ -223,3 +228,13 @@ plot_ly(
     Y. Laurent, J. Denonfoux, [**A. Bodein**]{.underline}, S. Ferreira\
     *Presented to : Journées Ouvertes en Biologie, Informatique et Mathématiques (JOBIM), Lille, France*
 :::
+
+```{r pub_details, echo=FALSE, results='asis'}
+# Résumés, citations par article et BibTeX, lus par publications.js.
+json <- gsub("</", "<\\/", paste(readLines("data/publications.json", warn = FALSE), collapse = "\n"), fixed = TRUE)
+js   <- paste(readLines("publications.js", warn = FALSE), collapse = "\n")
+cat("\n```{=html}\n",
+    '<script type="application/json" id="pub-data">', json, "</script>\n",
+    "<script>\n", js, "\n</script>\n",
+    "```\n", sep = "")
+```

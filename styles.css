@@ -198,6 +198,82 @@ main.content {
 .pub-section h4 .anchor { display: none !important; }
 .pub-section h4 a { color: var(--adlab-on-primary) !important; text-decoration: none; }
 
+.metrics-updated { font-size: 0.78rem; color: var(--adlab-ink-soft); margin-top: 0.8rem; }
+.metrics-updated p { margin: 0; }
+
+/* Carte dépliable (publications.js) : clic = résumé + citations + BibTeX. */
+.pub-card { cursor: pointer; }
+.pub-card > p { margin-bottom: 0; }
+.pub-head:focus-visible { outline: 2px solid var(--adlab-focus); outline-offset: 4px; border-radius: 4px; }
+.pub-card.open, .pub-card.open:hover { transform: none; box-shadow: var(--adlab-shadow-focus); }
+.pub-badge {
+  float: right; font-size: 0.75rem; font-weight: 600; white-space: nowrap;
+  color: var(--adlab-ink); background: var(--adlab-accent-4-bg);
+  border-radius: var(--adlab-radius-pill); padding: 0.1rem 0.7rem; margin: 0 0 0.3rem 0.8rem;
+}
+.pub-card > p::after {             /* chevron « déplier » en fin de carte */
+  content: "▾"; display: inline-block; margin-left: 0.4rem;
+  color: var(--adlab-ink-soft); transition: transform 0.2s ease;
+}
+.pub-card.open > p::after { transform: rotate(180deg); }
+
+.pub-details { cursor: default; margin-top: 0.9rem; padding-top: 0.9rem; border-top: 1px solid var(--adlab-glass-line); }
+.pub-details-grid { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 1.6rem; }
+@media (max-width: 767.98px) { .pub-details-grid { grid-template-columns: 1fr; gap: 1rem; } }
+.pub-details-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--adlab-ink-soft); font-weight: 600; margin-bottom: 0.35rem; }
+.pub-abstract-text { font-size: 0.9rem; line-height: 1.5; margin: 0; }
+.pub-abstract-text.clamped {
+  display: -webkit-box; -webkit-line-clamp: 6; line-clamp: 6;
+  -webkit-box-orient: vertical; overflow: hidden;
+}
+.pub-more { background: none; border: none; padding: 0; margin-top: 0.3rem;
+  font-size: 0.8rem; font-weight: 600; color: var(--adlab-link-hover); }
+body.quarto-dark .pub-more { color: var(--adlab-link); }
+.pub-muted { color: var(--adlab-ink-soft); font-size: 0.85rem; font-style: italic; margin: 0; }
+
+.pub-cites { margin-bottom: 0.4rem; }
+.pub-cites-value { font-size: 1.6rem; font-weight: 700; color: var(--adlab-primary); line-height: 1; }
+.pub-cites-unit { font-size: 0.8rem; color: var(--adlab-ink-soft); }
+.pub-bars { width: 100%; height: auto; display: block; }
+.pub-bars rect { fill: var(--adlab-primary); }
+.pub-bars rect:hover { fill: var(--adlab-accent-4); }
+.pub-bars rect.partial { opacity: 0.55; }   /* année en cours */
+.pub-bars text { text-anchor: middle; fill: var(--adlab-ink-soft); font-size: 10px; }
+.pub-bars .pub-bar-val { fill: var(--adlab-ink); font-weight: 600; }
+
+.pub-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+.pub-btn {
+  display: inline-flex; align-items: center; gap: 0.3rem;
+  font-size: 0.82rem; font-weight: 600; text-decoration: none;
+  border-radius: var(--adlab-radius-pill); padding: 0.3rem 0.95rem;
+  background: var(--adlab-primary); color: var(--adlab-on-primary) !important;
+  border: 1px solid var(--adlab-primary); cursor: pointer;
+}
+.pub-btn:hover { filter: brightness(1.12); }
+.pub-btn-ghost { background: transparent; color: var(--adlab-primary) !important; border-color: var(--adlab-glass-line); }
+.pub-btn-ghost:hover { background: var(--adlab-tint); filter: none; }
+body.quarto-dark .pub-btn-ghost { color: var(--adlab-link) !important; }
+
+/* Fenêtre BibTeX */
+.bib-dialog {
+  width: min(680px, calc(100vw - 32px)); padding: 1.1rem 1.3rem 1.2rem;
+  background: var(--adlab-paper); color: var(--adlab-ink);
+  border: 1px solid var(--adlab-glass-line); border-radius: var(--adlab-radius-md);
+  box-shadow: var(--adlab-shadow-focus);
+}
+.bib-dialog::backdrop { background: rgba(10, 20, 40, 0.45); -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); }
+.bib-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem; }
+.bib-head h5 { margin: 0; }
+.bib-close { background: none; border: none; font-size: 1.5rem; line-height: 1; color: var(--adlab-ink-soft); }
+.bib-code {
+  max-height: 55vh; overflow: auto; margin: 0; padding: 0.8rem 1rem;
+  background: var(--adlab-code-bg); border-radius: var(--adlab-radius-sm);
+  font-family: var(--adlab-font-mono); font-size: 0.8rem; white-space: pre-wrap; word-break: break-word;
+}
+.bib-code code { color: var(--adlab-ink); background: none; padding: 0; white-space: inherit; }
+.bib-actions { display: flex; gap: 0.5rem; justify-content: flex-end; margin-top: 0.9rem; }
+
 hr { border: none; border-top: 1px solid var(--adlab-glass-line); margin: 2rem 0; }
 
 /* Plotly : fond transparent, textes et barres sur les tokens. */

@@ -1,0 +1,484 @@
+{
+  "updated": "2026-10-09",
+  "profile": {
+    "total_cites": 1268,
+    "h_index": 10,
+    "i10_index": 10,
+    "history": [
+      {
+        "year": 2020,
+        "cites": 6
+      },
+      {
+        "year": 2021,
+        "cites": 28
+      },
+      {
+        "year": 2022,
+        "cites": 123
+      },
+      {
+        "year": 2023,
+        "cites": 179
+      },
+      {
+        "year": 2024,
+        "cites": 241
+      },
+      {
+        "year": 2025,
+        "cites": 340
+      },
+      {
+        "year": 2026,
+        "cites": 337
+      }
+    ],
+    "url": "https://scholar.google.com/citations?user=p-N6-8YAAAAJ"
+  },
+  "publications": {
+    "10.1038/s42003-025-08515-9": {
+      "doi": "10.1038/s42003-025-08515-9",
+      "title": "A systematic benchmark of integrative strategies for microbiome-metabolome data",
+      "abstract": "The rapid advancement of high-throughput sequencing technologies has enabled the integration of various omic layers into computational frameworks. Among these, metagenomics and metabolomics are increasingly studied for their roles in complex diseases. However, no standard currently exists for jointly integrating microbiome and metabolome datasets within statistical models. We benchmarked nineteen integrative methods to disentangle the relationships between microorganisms and metabolites. These methods address key research goals, including global associations, data summarization, individual associations, and feature selection. Through realistic simulations, we identified the best-performing methods and validated them on real gut microbiome datasets, revealing complementary biological processes across the two omic layers. Practical guidelines are provided for specific scientific questions and data types. This work establishes a foundation for research standards in metagenomics-metabolomics integration and supports future methodological developments, while also providing guidance for designing optimal analytical strategies tailored to specific integration questions.",
+      "bibtex": "@article{Mangnier_2025,\n  title={A systematic benchmark of integrative strategies for microbiome-metabolome data},\n  volume={8},\n  ISSN={2399-3642},\n  url={http://dx.doi.org/10.1038/s42003-025-08515-9},\n  DOI={10.1038/s42003-025-08515-9},\n  number={1},\n  journal={Communications Biology},\n  publisher={Springer Science and Business Media LLC},\n  author={Mangnier, Loïc and Bodein, Antoine and Mariaz, Margaux and Mathieu, Alban and Scott-Boyer, Marie-Pier and Vashist, Neerja and Bramble, Matthew S. and Droit, Arnaud},\n  year={2025},\n  month=July\n}",
+      "scholar": {
+        "pubid": "0EnyYjriUFMC",
+        "cites": 19,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&user=p-N6-8YAAAAJ&citation_for_view=p-N6-8YAAAAJ:0EnyYjriUFMC",
+        "history": [
+          {
+            "year": 2025,
+            "cites": 5
+          },
+          {
+            "year": 2026,
+            "cites": 13
+          }
+        ]
+      }
+    },
+    "10.1186/s13321-025-00962-0": {
+      "doi": "10.1186/s13321-025-00962-0",
+      "title": "Improving drug repositioning with negative data labeling using large language models",
+      "abstract": "INTRODUCTION: Drug repositioning offers numerous advantages, such as faster development timelines, reduced costs, and lower failure rates in drug development. Supervised machine learning is commonly used to score drug candidates but is hindered by the lack of reliable negative data-drugs that fail due to inefficacy or toxicity- which is difficult to access, lowering their prediction accuracy and generalization. Positive-Unlabeled (PU) learning has been used to overcome this issue by either randomly sampling unlabeled drugs or identifying probable negatives but still suffers from misclassification or oversimplified decision boundaries. RESULTS: We proposed a novel strategy using Large Language Models (GPT-4) to analyze all clinical trials on prostate cancer and systematically identify true negatives. This approach showed remarkable improvement in predictive accuracy on independent test sets with a Matthews Correlation Coefficient of 0.76 (± 0.33) compared to 0.55 (± 0.15) and 0.48 (± 0.18) for two commonly used PU learning approaches. Using our labeling strategy, we created a training set of 26 positive and 54 experimentally validated negative drugs. We then applied a machine learning ensemble to this new dataset to assess the repurposing potential of the remaining 11,043 drugs in the DrugBank database. This analysis identified 980 potential candidates for prostate cancer. A detailed review of the top 30 revealed 9 promising drugs targeting various mechanisms such as genomic instability, p53 regulation, or TMPRSS2-ERG fusion. CONCLUSION: By expanding our negative data labeling approach to all diseases within the ClinicalTrials.gov database, our method could greatly advance supervised drug repositioning, offering a more accurate and data-driven path for discovering new treatments.",
+      "bibtex": "@article{Picard_2025,\n  title={Improving drug repositioning with negative data labeling using large language models},\n  volume={17},\n  ISSN={1758-2946},\n  url={http://dx.doi.org/10.1186/s13321-025-00962-0},\n  DOI={10.1186/s13321-025-00962-0},\n  number={1},\n  journal={Journal of Cheminformatics},\n  publisher={Springer Science and Business Media LLC},\n  author={Picard, Milan and Leclercq, Mickael and Bodein, Antoine and Scott-Boyer, Marie Pier and Perin, Olivier and Droit, Arnaud},\n  year={2025},\n  month=Feb\n}",
+      "scholar": {
+        "pubid": "UebtZRa9Y70C",
+        "cites": 13,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&user=p-N6-8YAAAAJ&citation_for_view=p-N6-8YAAAAJ:UebtZRa9Y70C",
+        "history": [
+          {
+            "year": 2025,
+            "cites": 5
+          },
+          {
+            "year": 2026,
+            "cites": 8
+          }
+        ]
+      }
+    },
+    "10.1016/j.csbj.2024.06.012": {
+      "doi": "10.1016/j.csbj.2024.06.012",
+      "title": "Target repositioning using multi-layer networks and machine learning: The case of prostate cancer",
+      "abstract": "The discovery of novel therapeutic targets, defined as proteins which drugs can interact with to induce therapeutic benefits, typically represent the first and most important step of drug discovery. One solution for target discovery is target repositioning, a strategy which relies on the repurposing of known targets for new diseases, leading to new treatments, less side effects and potential drug synergies. Biological networks have emerged as powerful tools for integrating heterogeneous data and facilitating the prediction of biological or therapeutic properties. Consequently, they are widely employed to predict new therapeutic targets by characterizing potential candidates, often based on their interactions within a Protein-Protein Interaction (PPI) network, and their proximity to genes associated with the disease. However, over-reliance on PPI networks and the assumption that potential targets are necessarily near known genes can introduce biases that may limit the effectiveness of these methods. This study addresses these limitations in two ways. First, by exploiting a multi-layer network which incorporates additional information such as gene regulation, metabolite interactions, metabolic pathways, and several disease signatures such as Differentially Expressed Genes, mutated genes, Copy Number Alteration, and structural variants. Second, by extracting relevant features from the network using several approaches including proximity to disease-associated genes, but also unbiased approaches such as propagation-based methods, topological metrics, and module detection algorithms. Using prostate cancer as a case study, the best features were identified and utilized to train machine learning algorithms to predict 5 novel promising therapeutic targets for prostate cancer: IGF2R, C5AR, RAB7, SETD2 and NPBWR1.",
+      "bibtex": "@article{Picard_2024,\n  title={Target repositioning using multi-layer networks and machine learning: The case of prostate cancer},\n  volume={24},\n  ISSN={2001-0370},\n  url={http://dx.doi.org/10.1016/j.csbj.2024.06.012},\n  DOI={10.1016/j.csbj.2024.06.012},\n  journal={Computational and Structural Biotechnology Journal},\n  publisher={American Association for the Advancement of Science (AAAS)},\n  author={Picard, Milan and Scott-Boyer, Marie-Pier and Bodein, Antoine and Leclercq, Mickaël and Prunier, Julien and Périn, Olivier and Droit, Arnaud},\n  year={2024},\n  month=June,\n  pages={464–475}\n}",
+      "scholar": {
+        "pubid": "Se3iqnhoufwC",
+        "cites": 6,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&user=p-N6-8YAAAAJ&citation_for_view=p-N6-8YAAAAJ:Se3iqnhoufwC",
+        "history": [
+          {
+            "year": 2025,
+            "cites": 4
+          },
+          {
+            "year": 2026,
+            "cites": 2
+          }
+        ]
+      }
+    },
+    "10.1186/s40659-024-00509-x": {
+      "doi": "10.1186/s40659-024-00509-x",
+      "title": "Combined transcriptomics and proteomics unveil the impact of vitamin C in modulating specific protein abundance in the mouse liver",
+      "abstract": "Background Vitamin C (ascorbate) is a water-soluble antioxidant and an important cofactor for various biosynthetic and regulatory enzymes. Mice can synthesize vitamin C thanks to the key enzyme gulonolactone oxidase (Gulo) unlike humans. In the current investigation, we used Gulo −/− mice, which cannot synthesize their own ascorbate to determine the impact of this vitamin on both the transcriptomics and proteomics profiles in the whole liver. The study included Gulo −/− mouse groups treated with either sub-optimal or optimal ascorbate concentrations in drinking water. Liver tissues of females and males were collected at the age of four months and divided for transcriptomics and proteomics analysis. Immunoblotting, quantitative RT-PCR, and polysome profiling experiments were also conducted to complement our combined omics studies. Results Principal component analyses revealed distinctive differences in the mRNA and protein profiles as a function of sex between all the mouse cohorts. Despite such sexual dimorphism, Spearman analyses of transcriptomics data from females and males revealed correlations of hepatic ascorbate levels with transcripts encoding a wide array of biological processes involved in glucose and lipid metabolisms as well as in the acute-phase immune response. Moreover, integration of the proteomics data showed that ascorbate modulates the abundance of various enzymes involved in lipid, xenobiotic, organic acid, acetyl-CoA, and steroid metabolism mainly at the transcriptional level, especially in females. However, several proteins of the mitochondrial complex III significantly correlated with ascorbate concentrations in both males and females unlike their corresponding transcripts. Finally, poly(ribo)some profiling did not reveal significant enrichment difference for these mitochondrial complex III mRNAs between Gulo −/− mice treated with sub-optimal and optimal ascorbate levels. Conclusions Thus, the abundance of several subunits of the mitochondrial complex III are regulated by ascorbate at the post-transcriptional levels. Our extensive omics analyses provide a novel resource of altered gene expression patterns at the transcriptional and post-transcriptional levels under ascorbate deficiency.",
+      "bibtex": "@article{Aumailley_2024,\n  title={Combined transcriptomics and proteomics unveil the impact of vitamin C in modulating specific protein abundance in the mouse liver},\n  volume={57},\n  ISSN={0717-6287},\n  url={http://dx.doi.org/10.1186/s40659-024-00509-x},\n  DOI={10.1186/s40659-024-00509-x},\n  number={1},\n  journal={Biological Research},\n  publisher={Springer Science and Business Media LLC},\n  author={Aumailley, Lucie and Bodein, Antoine and Adjibade, Pauline and Leclercq, Mickaël and Bourassa, Sylvie and Droit, Arnaud and Mazroui, Rachid and Lebel, Michel},\n  year={2024},\n  month=May\n}",
+      "scholar": {
+        "pubid": "LkGwnXOMwfcC",
+        "cites": 2,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&user=p-N6-8YAAAAJ&citation_for_view=p-N6-8YAAAAJ:LkGwnXOMwfcC",
+        "history": [
+          {
+            "year": 2024,
+            "cites": 1
+          },
+          {
+            "year": 2025,
+            "cites": 1
+          }
+        ]
+      }
+    },
+    "10.1007/978-1-0716-3722-7_9": {
+      "doi": "10.1007/978-1-0716-3722-7_9",
+      "title": "Proteomic Profiling of Samples Derived from a Murine Model Following Cryptococcus neoformans Infection",
+      "abstract": null,
+      "bibtex": "@inbook{Muselius_2024,\n  title={Proteomic Profiling of Samples Derived from a Murine Model Following Cryptococcus neoformans Infection},\n  ISBN={9781071637227},\n  ISSN={1940-6029},\n  url={http://dx.doi.org/10.1007/978-1-0716-3722-7_9},\n  DOI={10.1007/978-1-0716-3722-7_9},\n  booktitle={Cryptococcus neoformans},\n  publisher={Springer US},\n  author={Muselius, Ben and Bodein, Antoine and Roux-Dalvai, Florence and Droit, Arnaud and Geddes-McAlister, Jennifer},\n  year={2024},\n  pages={127–137}\n}",
+      "scholar": {
+        "pubid": "roLk4NBRz8UC",
+        "cites": 8,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&user=p-N6-8YAAAAJ&citation_for_view=p-N6-8YAAAAJ:roLk4NBRz8UC",
+        "history": [
+          {
+            "year": 2025,
+            "cites": 8
+          }
+        ]
+      }
+    },
+    "10.3389/fmicb.2024.1373344": {
+      "doi": "10.3389/fmicb.2024.1373344",
+      "title": "SOS genes are rapidly induced while translesion synthesis polymerase activity is temporally regulated",
+      "abstract": "The DNA damage inducible SOS response in bacteria serves to increase survival of the species at the cost of mutagenesis. The SOS response first initiates error-free repair followed by error-prone repair. Here, we have employed a multi-omics approach to elucidate the temporal coordination of the SOS response. Escherichia coli was grown in batch cultivation in bioreactors to ensure highly controlled conditions, and a low dose of the antibiotic ciprofloxacin was used to activate the SOS response while avoiding extensive cell death. Our results show that expression of genes involved in error-free and error-prone repair were both induced shortly after DNA damage, thus, challenging the established perception that the expression of error-prone repair genes is delayed. By combining transcriptomics and a sub-proteomics approach termed signalomics, we found that the temporal segregation of error-free and error-prone repair is primarily regulated after transcription, supporting the current literature. Furthermore, the heterology index (i.e., the binding affinity of LexA to the SOS box) was correlated to the maximum increase in gene expression and not to the time of induction of SOS genes. Finally, quantification of metabolites revealed increasing pyrimidine pools as a late feature of the SOS response. Our results elucidate how the SOS response is coordinated, showing a rapid transcriptional response and temporal regulation of mutagenesis on the protein and metabolite levels.",
+      "bibtex": "@article{Bergum_2024,\n  title={SOS genes are rapidly induced while translesion synthesis polymerase activity is temporally regulated},\n  volume={15},\n  ISSN={1664-302X},\n  url={http://dx.doi.org/10.3389/fmicb.2024.1373344},\n  DOI={10.3389/fmicb.2024.1373344},\n  journal={Frontiers in Microbiology},\n  publisher={Frontiers Media SA},\n  author={Bergum, Olaug Elisabeth Torheim and Singleton, Amanda Holstad and Røst, Lisa Marie and Bodein, Antoine and Scott-Boyer, Marie-Pier and Rye, Morten Beck and Droit, Arnaud and Bruheim, Per and Otterlei, Marit},\n  year={2024},\n  month=Mar\n}",
+      "scholar": {
+        "pubid": "_FxGoFyzp5QC",
+        "cites": 11,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&user=p-N6-8YAAAAJ&citation_for_view=p-N6-8YAAAAJ:_FxGoFyzp5QC",
+        "history": [
+          {
+            "year": 2025,
+            "cites": 4
+          },
+          {
+            "year": 2026,
+            "cites": 7
+          }
+        ]
+      }
+    },
+    "10.3390/ijms24108832": {
+      "doi": "10.3390/ijms24108832",
+      "title": "Multi-Omics Data Integration Reveals Key Variables Contributing to Subgingival Microbiome Dysbiosis-Induced Inflammatory Response in a Hyperglycemic Microenvironment",
+      "abstract": "Subgingival microbiome dysbiosis promotes the development of periodontitis, an irreversible chronic inflammatory disease associated with metabolic diseases. However, studies regarding the effects of a hyperglycemic microenvironment on host–microbiome interactions and host inflammatory response during periodontitis are still scarce. Here, we investigated the impacts of a hyperglycemic microenvironment on the inflammatory response and transcriptome of a gingival coculture model stimulated with dysbiotic subgingival microbiomes. HGF-1 cells overlaid with U937 macrophage-like cells were stimulated with subgingival microbiomes collected from four healthy donors and four patients with periodontitis. Pro-inflammatory cytokines and matrix metalloproteinases were measured while the coculture RNA was submitted to a microarray analysis. Subgingival microbiomes were submitted to 16s rRNA gene sequencing. Data were analyzed using an advanced multi-omics bioinformatic data integration model. Our results show that the genes krt76, krt27, pnma5, mansc4, rab41, thoc6, tm6sf2, and znf506 as well as the pro-inflammatory cytokines IL-1β, GM-CSF, FGF2, IL-10, the metalloproteinases MMP3 and MMP8, and bacteria from the ASV 105, ASV 211, ASV 299, Prevotella, Campylobacter and Fretibacterium genera are key intercorrelated variables contributing to periodontitis-induced inflammatory response in a hyperglycemic microenvironment. In conclusion, our multi-omics integration analysis unveiled the complex interrelationships involved in the regulation of periodontal inflammation in response to a hyperglycemic microenvironment.",
+      "bibtex": "@article{Lafleur_2023,\n  title={Multi-Omics Data Integration Reveals Key Variables Contributing to Subgingival Microbiome Dysbiosis-Induced Inflammatory Response in a Hyperglycemic Microenvironment},\n  volume={24},\n  ISSN={1422-0067},\n  url={http://dx.doi.org/10.3390/ijms24108832},\n  DOI={10.3390/ijms24108832},\n  number={10},\n  journal={International Journal of Molecular Sciences},\n  publisher={MDPI AG},\n  author={Lafleur, Sarah and Bodein, Antoine and Mbuya Malaïka Mutombo, Joanna and Mathieu, Alban and Joly Beauparlant, Charles and Minne, Xavier and Chandad, Fatiha and Droit, Arnaud and Houde, Vanessa P.},\n  year={2023},\n  month=May,\n  pages={8832}\n}",
+      "scholar": {
+        "pubid": "eQOLeE2rZwMC",
+        "cites": 8,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&user=p-N6-8YAAAAJ&citation_for_view=p-N6-8YAAAAJ:eQOLeE2rZwMC",
+        "history": [
+          {
+            "year": 2024,
+            "cites": 2
+          },
+          {
+            "year": 2025,
+            "cites": 1
+          },
+          {
+            "year": 2026,
+            "cites": 5
+          }
+        ]
+      }
+    },
+    "10.1016/j.jff.2022.105375": {
+      "doi": "10.1016/j.jff.2022.105375",
+      "title": "High dairy products intake modifies the correlation between α-tocopherol levels and serum proteins related to lipid metabolism in subjects at risk of type 2 diabetes",
+      "abstract": "Increasing dairy fat intake is expected to improve α-tocopherol bioavailability and could be beneficial for improving T2D risk factors. The aim of this study is to investigate the relationship between α-tocopherol levels and serum protein profiles before and after intake of adequate dairy (AD) or high dairy (HD) products in hyperinsulinemia patients. In this crossover study, dietary intake of 25 subjects with hyperinsulinemia (54 ± 14 yrs and BMI 31 ± 3) included: 1- pre-AD intake; 2- pre-HD intake; 3- post- AD intake (≤2 servings/day); and 4- post-HD intake (≥4 servings/day) assessed by food frequency questionnaire. In pre-AD, post-AD and pre-HD, α-tocopherol positively correlated with proteins mainly involved in lipid metabolism (rho > 0.40; P < 0.05). In contrast, α-tocopherol did not correlate with these biological processes in post-HD. Thus, these findings indicate that α-tocopherol levels are associated with serum proteins that regulate lipid homeostasis. However, the increase intake of dairy products modified these associations in hyperinsulinemia subjects.",
+      "bibtex": "@article{Mahdavi_2023,\n  title={High dairy products intake modifies the correlation between α-tocopherol levels and serum proteins related to lipid metabolism in subjects at risk of type 2 diabetes},\n  volume={100},\n  ISSN={1756-4646},\n  url={http://dx.doi.org/10.1016/j.jff.2022.105375},\n  DOI={10.1016/j.jff.2022.105375},\n  journal={Journal of Functional Foods},\n  publisher={Elsevier BV},\n  author={Mahdavi, Atena and Leclercq, Mickael and Bodein, Antoine and Gotti, Clarisse and Greffard, Karine and Bilodeau, Jean-François and Droit, Arnaud and Lebel, Michel and Rudkowska, Iwona},\n  year={2023},\n  month=Jan,\n  pages={105375}\n}",
+      "scholar": {
+        "pubid": "W7OEmFMy1HYC",
+        "cites": 6,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&user=p-N6-8YAAAAJ&citation_for_view=p-N6-8YAAAAJ:W7OEmFMy1HYC",
+        "history": [
+          {
+            "year": 2023,
+            "cites": 1
+          },
+          {
+            "year": 2024,
+            "cites": 3
+          },
+          {
+            "year": 2025,
+            "cites": 1
+          },
+          {
+            "year": 2026,
+            "cites": 1
+          }
+        ]
+      }
+    },
+    "10.3389/fmolb.2022.962799": {
+      "doi": "10.3389/fmolb.2022.962799",
+      "title": "Overview of methods for characterization and visualization of a protein–protein interaction network in a multi-omics integration context",
+      "abstract": "At the heart of the cellular machinery through the regulation of cellular functions, protein–protein interactions (PPIs) have a significant role. PPIs can be analyzed with network approaches. Construction of a PPI network requires prediction of the interactions. All PPIs form a network. Different biases such as lack of data, recurrence of information, and false interactions make the network unstable. Integrated strategies allow solving these different challenges. These approaches have shown encouraging results for the understanding of molecular mechanisms, drug action mechanisms, and identification of target genes. In order to give more importance to an interaction, it is evaluated by different confidence scores. These scores allow the filtration of the network and thus facilitate the representation of the network, essential steps to the identification and understanding of molecular mechanisms. In this review, we will discuss the main computational methods for predicting PPI, including ones confirming an interaction as well as the integration of PPIs into a network, and we will discuss visualization of these complex data.",
+      "bibtex": "@article{Robin_2022,\n  title={Overview of methods for characterization and visualization of a protein–protein interaction network in a multi-omics integration context},\n  volume={9},\n  ISSN={2296-889X},\n  url={http://dx.doi.org/10.3389/fmolb.2022.962799},\n  DOI={10.3389/fmolb.2022.962799},\n  journal={Frontiers in Molecular Biosciences},\n  publisher={Frontiers Media SA},\n  author={Robin, Vivian and Bodein, Antoine and Scott-Boyer, Marie-Pier and Leclercq, Mickaël and Périn, Olivier and Droit, Arnaud},\n  year={2022},\n  month=Sept\n}",
+      "scholar": {
+        "pubid": "Y0pCki6q_DkC",
+        "cites": 21,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&user=p-N6-8YAAAAJ&citation_for_view=p-N6-8YAAAAJ:Y0pCki6q_DkC",
+        "history": [
+          {
+            "year": 2022,
+            "cites": 1
+          },
+          {
+            "year": 2023,
+            "cites": 1
+          },
+          {
+            "year": 2024,
+            "cites": 7
+          },
+          {
+            "year": 2025,
+            "cites": 6
+          },
+          {
+            "year": 2026,
+            "cites": 6
+          }
+        ]
+      }
+    },
+    "10.1172/jci.insight.152638": {
+      "doi": "10.1172/jci.insight.152638",
+      "title": "The interaction of secreted phospholipase A2-IIA with the microbiota alters its lipidome and promotes inflammation",
+      "abstract": "Secreted phospholipase A 2 -IIA (sPLA 2 -IIA) hydrolyzes phospholipids to liberate lysophospholipids and fatty acids. Given its poor activity toward eukaryotic cell membranes, its role in the generation of proinflammatory lipid mediators is unclear. Conversely, sPLA 2 -IIA efficiently hydrolyzes bacterial membranes. Here, we show that sPLA 2 -IIA affects the immune system by acting on the intestinal microbial flora. Using mice overexpressing transgene-driven human sPLA 2 -IIA, we found that the intestinal microbiota was critical for both induction of an immune phenotype and promotion of inflammatory arthritis. The expression of sPLA 2 -IIA led to alterations of the intestinal microbiota composition, but housing in a more stringent pathogen-free facility revealed that its expression could affect the immune system in the absence of changes to the composition of this flora. In contrast, untargeted lipidomic analysis focusing on bacteria-derived lipid mediators revealed that sPLA 2 -IIA could profoundly alter the fecal lipidome. The data suggest that a singular protein, sPLA 2 -IIA, produces systemic effects on the immune system through its activity on the microbiota and its lipidome.",
+      "bibtex": "@article{Dor__2022,\n  title={The interaction of secreted phospholipase A2-IIA with the microbiota alters its lipidome and promotes inflammation},\n  volume={7},\n  ISSN={2379-3708},\n  url={http://dx.doi.org/10.1172/jci.insight.152638},\n  DOI={10.1172/jci.insight.152638},\n  number={2},\n  journal={JCI Insight},\n  publisher={American Society for Clinical Investigation},\n  author={Doré, Etienne and Joly-Beauparlant, Charles and Morozumi, Satoshi and Mathieu, Alban and Lévesque, Tania and Allaeys, Isabelle and Duchez, Anne-Claire and Cloutier, Nathalie and Leclercq, Mickaël and Bodein, Antoine and Payré, Christine and Martin, Cyril and Petit-Paitel, Agnes and Gelb, Michael H. and Rangachari, Manu and Murakami, Makoto and Davidovic, Laetitia and Flamand, Nicolas and Arita, Makoto and Lambeau, Gérard and Droit, Arnaud and Boilard, Eric},\n  year={2022},\n  month=Jan\n}",
+      "scholar": {
+        "pubid": "Tyk-4Ss8FVUC",
+        "cites": 55,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&user=p-N6-8YAAAAJ&citation_for_view=p-N6-8YAAAAJ:Tyk-4Ss8FVUC",
+        "history": [
+          {
+            "year": 2022,
+            "cites": 8
+          },
+          {
+            "year": 2023,
+            "cites": 16
+          },
+          {
+            "year": 2024,
+            "cites": 8
+          },
+          {
+            "year": 2025,
+            "cites": 14
+          },
+          {
+            "year": 2026,
+            "cites": 9
+          }
+        ]
+      }
+    },
+    "10.1093/nar/gkab1200": {
+      "doi": "10.1093/nar/gkab1200",
+      "title": "Interpretation of network-based integration from multi-omics longitudinal data",
+      "abstract": "Multi-omics integration is key to fully understand complex biological processes in an holistic manner. Furthermore, multi-omics combined with new longitudinal experimental design can unreveal dynamic relationships between omics layers and identify key players or interactions in system development or complex phenotypes. However, integration methods have to address various experimental designs and do not guarantee interpretable biological results. The new challenge of multi-omics integration is to solve interpretation and unlock the hidden knowledge within the multi-omics data. In this paper, we go beyond integration and propose a generic approach to face the interpretation problem. From multi-omics longitudinal data, this approach builds and explores hybrid multi-omics networks composed of both inferred and known relationships within and between omics layers. With smart node labelling and propagation analysis, this approach predicts regulation mechanisms and multi-omics functional modules. We applied the method on 3 case studies with various multi-omics designs and identified new multi-layer interactions involved in key biological functions that could not be revealed with single omics analysis. Moreover, we highlighted interplay in the kinetics that could help identify novel biological mechanisms. This method is available as an R package netOmics to readily suit any application.",
+      "bibtex": "@article{Bodein_2021,\n  title={Interpretation of network-based integration from multi-omics longitudinal data},\n  volume={50},\n  ISSN={1362-4962},\n  url={http://dx.doi.org/10.1093/nar/gkab1200},\n  DOI={10.1093/nar/gkab1200},\n  number={5},\n  journal={Nucleic Acids Research},\n  publisher={Oxford University Press (OUP)},\n  author={Bodein, Antoine and Scott-Boyer, Marie-Pier and Perin, Olivier and Lê Cao, Kim-Anh and Droit, Arnaud},\n  year={2021},\n  month=Dec,\n  pages={e27–e27}\n}",
+      "scholar": {
+        "pubid": "qjMakFHDy7sC",
+        "cites": 112,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&user=p-N6-8YAAAAJ&citation_for_view=p-N6-8YAAAAJ:qjMakFHDy7sC",
+        "history": [
+          {
+            "year": 2021,
+            "cites": 1
+          },
+          {
+            "year": 2022,
+            "cites": 13
+          },
+          {
+            "year": 2023,
+            "cites": 18
+          },
+          {
+            "year": 2024,
+            "cites": 21
+          },
+          {
+            "year": 2025,
+            "cites": 30
+          },
+          {
+            "year": 2026,
+            "cites": 29
+          }
+        ]
+      }
+    },
+    "10.1093/bioinformatics/btab664": {
+      "doi": "10.1093/bioinformatics/btab664",
+      "title": "timeOmics: an R package for longitudinal multi-omics data integration",
+      "abstract": "Motivation Multi-omics data integration enables the global analysis of biological systems and discovery of new biological insights. Multi-omics experimental designs have been further extended with a longitudinal dimension to study dynamic relationships between molecules. However, methods that integrate longitudinal multi-omics data are still in their infancy. Results We introduce the R package timeOmics, a generic analytical framework for the integration of longitudinal multi-omics data. The framework includes pre-processing, modeling and clustering to identify molecular features strongly associated with time. We illustrate this framework in a case study to detect seasonal patterns of mRNA, metabolites, gut taxa and clinical variables in patients with diabetes mellitus from the integrative Human Microbiome Project. Availabilityand implementation timeOmics is available on Bioconductor and github.com/abodein/timeOmics. Supplementary information Supplementary data are available at Bioinformatics online.",
+      "bibtex": "@article{Bodein_2021,\n  title={timeOmics: an R package for longitudinal multi-omics data integration},\n  volume={38},\n  ISSN={1367-4811},\n  url={http://dx.doi.org/10.1093/bioinformatics/btab664},\n  DOI={10.1093/bioinformatics/btab664},\n  number={2},\n  journal={Bioinformatics},\n  publisher={Oxford University Press (OUP)},\n  author={Bodein, Antoine and Scott-Boyer, Marie-Pier and Perin, Olivier and Lê Cao, Kim-Anh and Droit, Arnaud},\n  editor={Wren, Jonathan},\n  year={2021},\n  month=Sept,\n  pages={577–579}\n}",
+      "scholar": {
+        "pubid": "zYLM7Y9cAGgC",
+        "cites": 57,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&user=p-N6-8YAAAAJ&citation_for_view=p-N6-8YAAAAJ:zYLM7Y9cAGgC",
+        "history": [
+          {
+            "year": 2022,
+            "cites": 7
+          },
+          {
+            "year": 2023,
+            "cites": 7
+          },
+          {
+            "year": 2024,
+            "cites": 12
+          },
+          {
+            "year": 2025,
+            "cites": 14
+          },
+          {
+            "year": 2026,
+            "cites": 16
+          }
+        ]
+      }
+    },
+    "10.1016/j.csbj.2021.06.030": {
+      "doi": "10.1016/j.csbj.2021.06.030",
+      "title": "Integration strategies of multi-omics data for machine learning analysis",
+      "abstract": "Increased availability of high-throughput technologies has generated an ever-growing number of omics data that seek to portray many different but complementary biological layers including genomics, epigenomics, transcriptomics, proteomics, and metabolomics. New insight from these data have been obtained by machine learning algorithms that have produced diagnostic and classification biomarkers. Most biomarkers obtained to date however only include one omic measurement at a time and thus do not take full advantage of recent multi-omics experiments that now capture the entire complexity of biological systems. Multi-omics data integration strategies are needed to combine the complementary knowledge brought by each omics layer. We have summarized the most recent data integration methods/ frameworks into five different integration strategies: early, mixed, intermediate, late and hierarchical. In this mini-review, we focus on challenges and existing multi-omics integration strategies by paying special attention to machine learning applications.",
+      "bibtex": "@article{Picard_2021,\n  title={Integration strategies of multi-omics data for machine learning analysis},\n  volume={19},\n  ISSN={2001-0370},\n  url={http://dx.doi.org/10.1016/j.csbj.2021.06.030},\n  DOI={10.1016/j.csbj.2021.06.030},\n  journal={Computational and Structural Biotechnology Journal},\n  publisher={American Association for the Advancement of Science (AAAS)},\n  author={Picard, Milan and Scott-Boyer, Marie-Pier and Bodein, Antoine and Périn, Olivier and Droit, Arnaud},\n  year={2021},\n  month=Jan,\n  pages={3735–3746}\n}",
+      "scholar": {
+        "pubid": "UeHWp8X0CEIC",
+        "cites": 857,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&user=p-N6-8YAAAAJ&citation_for_view=p-N6-8YAAAAJ:UeHWp8X0CEIC",
+        "history": [
+          {
+            "year": 2021,
+            "cites": 8
+          },
+          {
+            "year": 2022,
+            "cites": 69
+          },
+          {
+            "year": 2023,
+            "cites": 124
+          },
+          {
+            "year": 2024,
+            "cites": 175
+          },
+          {
+            "year": 2025,
+            "cites": 235
+          },
+          {
+            "year": 2026,
+            "cites": 235
+          }
+        ]
+      }
+    },
+    "10.1021/acs.est.0c01920": {
+      "doi": "10.1021/acs.est.0c01920",
+      "title": "Adipose Tissue Transcriptome Is Related to Pollutant Exposure in Polar Bear Mother–Cub Pairs from Svalbard, Norway",
+      "abstract": ") are highly contaminated with persistent organic pollutants (POPs). Females transfer POPs to their offspring through gestation and lactation; therefore, young cubs present higher POPs concentrations than their mothers. Recent studies suggest that POPs affect the lipid metabolism in female polar bears; however, the mechanisms and impact on their offspring remain unknown. Here, we hypothesized that exposure to POPs differentially alters genome-wide gene transcription in the adipose tissue from mother polar bears and their cubs, highlighting molecular differences in response between adults and young. Adipose tissue biopsies were collected from 13 adult female polar bears and their twin cubs in Svalbard, Norway, in April 2011, 2012, and 2013. Total RNA extracted from biopsies was subjected to next-generation RNA sequencing. Plasma concentrations of summed polychlorinated biphenyls, organochlorine pesticides, and polybrominated diphenyl ethers in mothers ranged from 897 to 13620 ng/g wet weight and were associated with altered adipose tissue gene expression in both mothers and cubs. In mothers, 2502 and 2586 genes in total were positively and negatively, respectively, correlated to POP exposure, whereas in cubs, 2585 positively and 1690 negatively genes. Between mothers and cubs, 743 positively and negatively genes overlapped between mothers and cubs suggesting partially shared molecular responses to ΣPOPs. ΣPOP-associated genes were involved in numerous metabolic pathways in mothers and cubs, indicating that POP exposure alters the energy metabolism, which, in turn, may be linked to metabolic dysfunction.",
+      "bibtex": "@article{Herst_2020,\n  title={Adipose Tissue Transcriptome Is Related to Pollutant Exposure in Polar Bear Mother–Cub Pairs from Svalbard, Norway},\n  volume={54},\n  ISSN={1520-5851},\n  url={http://dx.doi.org/10.1021/acs.est.0c01920},\n  DOI={10.1021/acs.est.0c01920},\n  number={18},\n  journal={Environmental Science &amp; Technology},\n  publisher={American Chemical Society (ACS)},\n  author={Herst, Pauline M. and Aars, Jon and Joly Beauparlant, Charles and Bodein, Antoine and Dalvai, Mathieu and Gagné, Dominic and Droit, Arnaud and Bailey, Janice L. and Routti, Heli},\n  year={2020},\n  month=Aug,\n  pages={11365–11375}\n}",
+      "scholar": {
+        "pubid": "2osOgNQ5qMEC",
+        "cites": 14,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&user=p-N6-8YAAAAJ&citation_for_view=p-N6-8YAAAAJ:2osOgNQ5qMEC",
+        "history": [
+          {
+            "year": 2021,
+            "cites": 4
+          },
+          {
+            "year": 2022,
+            "cites": 5
+          },
+          {
+            "year": 2023,
+            "cites": 1
+          },
+          {
+            "year": 2024,
+            "cites": 2
+          },
+          {
+            "year": 2025,
+            "cites": 1
+          },
+          {
+            "year": 2026,
+            "cites": 1
+          }
+        ]
+      }
+    },
+    "10.3389/fgene.2019.00963": {
+      "doi": "10.3389/fgene.2019.00963",
+      "title": "A Generic Multivariate Framework for the Integration of Microbiome Longitudinal Studies With Other Data Types",
+      "abstract": "Simultaneous profiling of biospecimens using different technological platforms enables the study of many data types, encompassing microbial communities, omics, and meta-omics as well as clinical or chemistry variables. Reduction in costs now enables longitudinal or time course studies on the same biological material or system. The overall aim of such studies is to investigate relationships between these longitudinal measures in a holistic manner to further decipher the link between molecular mechanisms and microbial community structures, or host-microbiota interactions. However, analytical frameworks enabling an integrated analysis between microbial communities and other types of biological, clinical, or phenotypic data are still in their infancy. The challenges include few time points that may be unevenly spaced and unmatched between different data types, a small number of unique individual biospecimens, and high individual variability. Those challenges are further exacerbated by the inherent characteristics of microbial communities-derived data (e.g., sparse, compositional). We propose a generic data-driven framework to integrate different types of longitudinal data measured on the same biological specimens with microbial community data and select key temporal features with strong associations within the same sample group. The framework ranges from filtering and modeling to integration using smoothing splines and multivariate dimension reduction methods to address some of the analytical challenges of microbiome-derived data. We illustrate our framework on different types of multi-omics case studies in bioreactor experiments as well as human studies.",
+      "bibtex": "@article{Bodein_2019,\n  title={A Generic Multivariate Framework for the Integration of Microbiome Longitudinal Studies With Other Data Types},\n  volume={10},\n  ISSN={1664-8021},\n  url={http://dx.doi.org/10.3389/fgene.2019.00963},\n  DOI={10.3389/fgene.2019.00963},\n  journal={Frontiers in Genetics},\n  publisher={Frontiers Media SA},\n  author={Bodein, Antoine and Chapleur, Olivier and Droit, Arnaud and Lê Cao, Kim-Anh},\n  year={2019},\n  month=Nov\n}",
+      "scholar": {
+        "pubid": "u-x6o8ySG0sC",
+        "cites": 78,
+        "url": "https://scholar.google.com/citations?view_op=view_citation&user=p-N6-8YAAAAJ&citation_for_view=p-N6-8YAAAAJ:u-x6o8ySG0sC",
+        "history": [
+          {
+            "year": 2019,
+            "cites": 1
+          },
+          {
+            "year": 2020,
+            "cites": 6
+          },
+          {
+            "year": 2021,
+            "cites": 15
+          },
+          {
+            "year": 2022,
+            "cites": 20
+          },
+          {
+            "year": 2023,
+            "cites": 10
+          },
+          {
+            "year": 2024,
+            "cites": 10
+          },
+          {
+            "year": 2025,
+            "cites": 11
+          },
+          {
+            "year": 2026,
+            "cites": 5
+          }
+        ]
+      }
+    },
+    "10.18129/b9.bioc.netomics": {
+      "doi": "10.18129/b9.bioc.netomics",
+      "title": null,
+      "abstract": null,
+      "bibtex": "@misc{netOmics_2021,\n  doi = {10.18129/B9.BIOC.NETOMICS},\n  url = {https://bioconductor.org/packages/netOmics},\n  author = {{Antoine Bodein}},\n  title = {netOmics},\n  publisher = {Bioconductor},\n  year = {2021}\n}"
+    },
+    "10.18129/b9.bioc.timeomics": {
+      "doi": "10.18129/b9.bioc.timeomics",
+      "title": null,
+      "abstract": null,
+      "bibtex": "@misc{timeOmics_2020,\n  doi = {10.18129/B9.BIOC.TIMEOMICS},\n  url = {https://bioconductor.org/packages/timeOmics},\n  author = {{Antoine Bodein, Olivier Chapleur, Kim-Anh Le Cao, Arnaud Droit}},\n  title = {timeOmics},\n  publisher = {Bioconductor},\n  year = {2020}\n}"
+    }
+  }
+}
